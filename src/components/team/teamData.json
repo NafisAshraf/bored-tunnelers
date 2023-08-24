@@ -1,0 +1,164 @@
+{
+  "teams": [
+    {
+      "name": "Front End/Cutterhead Team",
+      "members": [
+        {
+          "name": "M Shahriar Iqbal",
+          "university": "RUET",
+          "role": "Lead"
+        },
+        {
+          "name": "Shaekh Mohammad Shithil",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Co-Lead"
+        },
+        {
+          "name": "Md. Imran Khan",
+          "university": "BUET",
+          "role": ""
+        },
+        {
+          "name": "Sibly Noman",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
+        },
+        {
+          "name": "Fahim Uddin Enam",
+          "university": "BRAC University",
+          "role": ""
+        },
+        {
+          "name": "S M Tamim Ahmed (Information Missing)",
+          "university": "Information Missing",
+          "role": ""
+        }
+      ]
+    },
+    {
+      "name": "Navigation & Propulsion Team",
+      "members": [
+        {
+          "name": "Shaekh Mohammad Shithil",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Lead"
+        },
+        {
+          "name": "Sibly Noman",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Co-Lead"
+        },
+        {
+          "name": "M Shahriar Iqbal",
+          "university": "RUET",
+          "role": ""
+        }
+      ]
+    },
+    {
+      "name": "Material Extraction, Tunnel Lining & Launch System Team",
+      "members": [
+        {
+          "name": "Fahin Uddin Enam",
+          "university": "BRAC University",
+          "role": "Lead"
+        },
+        {
+          "name": "Md. Imran Khan",
+          "university": "BUET",
+          "role": "Co-Lead"
+        }
+      ]
+    },
+    {
+      "name": "CAD & Simulations Team",
+      "members": [
+        {
+          "name": "M Shahriar Iqbal",
+          "university": "RUET",
+          "role": "Lead"
+        },
+        {
+          "name": "Fahin Uddin Enam",
+          "university": "BRAC University",
+          "role": "Co-Lead"
+        },
+        {
+          "name": "Sibly Noman",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
+        },
+        {
+          "name": "Md. Nursad Alam",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
+        },
+        {
+          "name": "Tayeb Mahmood Sami",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
+        },
+        {
+          "name": "S M Tamim Ahmed (Information Missing)",
+          "university": "Information Missing",
+          "role": ""
+        },
+        {
+          "name": "Ahmed Inkiad",
+          "university": "BUET",
+          "role": ""
+        }
+      ]
+    },
+    {
+      "name": "Electronics & Software Team",
+      "members": [
+        {
+          "name": "Al Mominul Haque Badhan",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Lead"
+        },
+        {
+          "name": "Abu Talha",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Co-Lead"
+        },
+        {
+          "name": "Nafis Ashraf",
+          "university": "BRAC University",
+          "role": ""
+        },
+        {
+          "name": "Riyadh",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
+        }
+      ]
+    },
+    {
+      "name": "Social Media, Business Strategy & Fundraising Team",
+      "members": [
+        {
+          "name": "Sibly Noman",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Lead"
+        },
+        {
+          "name": "Talha Zubair (Information Missing)",
+          "university": "Information Missing",
+          "role": "Co-Lead"
+        },
+        {
+          "name": "Farhan Hasan",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
+        },
+        {
+          "name": "Md. Arafath Jaman Alif",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
+        }
+      ]
+    }
+  ]
+}
