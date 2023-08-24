@@ -30,7 +30,7 @@ function Team(props) {
 
           <div className="row justify-content-center">
             {team.members.map((member) => (
-              <div key={member.name} className="col col-lg-3">
+              <div key={member.name} className="col-12 col-sm col-lg-3">
                 <div className="mx-3">
                   <Profile
                     name={member.name}
