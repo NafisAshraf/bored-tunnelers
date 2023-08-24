@@ -5,31 +5,37 @@
       "members": [
         {
           "name": "M Shahriar Iqbal",
+          "image": "images/team/M_Shahriar_Iqbal.jpg",
           "university": "RUET",
           "role": "Lead"
         },
         {
           "name": "Shaekh Mohammad Shithil",
+          "image": "images/team/Shaekh_Mohammad_Shithil.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": "Co-Lead"
         },
         {
           "name": "Md. Imran Khan",
+          "image": "images/team/Md_Imran_Khan.jpg",
           "university": "BUET",
           "role": ""
         },
         {
           "name": "Sibly Noman",
+          "image": "images/team/Sibly_Noman.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         },
         {
-          "name": "Fahim Uddin Enam",
+          "name": "Fahin Uddin Enam",
+          "image": "images/team/Fahin_Uddin_Enam.jpg",
           "university": "BRAC University",
           "role": ""
         },
         {
           "name": "S M Tamim Ahmed (Information Missing)",
+          "image": "images/team/cat.jpg",
           "university": "Information Missing",
           "role": ""
         }
@@ -40,16 +46,19 @@
       "members": [
         {
           "name": "Shaekh Mohammad Shithil",
+          "image": "images/team/Shaekh_Mohammad_Shithil.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": "Lead"
         },
         {
           "name": "Sibly Noman",
+          "image": "images/team/Sibly_Noman.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": "Co-Lead"
         },
         {
           "name": "M Shahriar Iqbal",
+          "image": "images/team/M_Shahriar_Iqbal.jpg",
           "university": "RUET",
           "role": ""
         }
@@ -60,11 +69,13 @@
       "members": [
         {
           "name": "Fahin Uddin Enam",
+          "image": "images/team/Fahin_Uddin_Enam.jpg",
           "university": "BRAC University",
           "role": "Lead"
         },
         {
           "name": "Md. Imran Khan",
+          "image": "images/team/Md_Imran_Khan.jpg",
           "university": "BUET",
           "role": "Co-Lead"
         }
@@ -75,36 +86,43 @@
       "members": [
         {
           "name": "M Shahriar Iqbal",
+          "image": "images/team/M_Shahriar_Iqbal.jpg",
           "university": "RUET",
           "role": "Lead"
         },
         {
           "name": "Fahin Uddin Enam",
+          "image": "images/team/Fahin_Uddin_Enam.jpg",
           "university": "BRAC University",
           "role": "Co-Lead"
         },
         {
           "name": "Sibly Noman",
+          "image": "images/team/Sibly_Noman.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         },
         {
           "name": "Md. Nursad Alam",
+          "image": "images/team/Md_Nursad_Alam.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         },
         {
           "name": "Tayeb Mahmood Sami",
+          "image": "images/team/Tayeb_Mahmood_Sami.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         },
         {
           "name": "S M Tamim Ahmed (Information Missing)",
+          "image": "images/team/cat.jpg",
           "university": "Information Missing",
           "role": ""
         },
         {
           "name": "Ahmed Inkiad",
+          "image": "images/team/Ahmed_Inkiad.jpg",
           "university": "BUET",
           "role": ""
         }
@@ -115,21 +133,25 @@
       "members": [
         {
           "name": "Al Mominul Haque Badhan",
+          "image": "images/team/Al_Mominul_Haque_Badhan.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": "Lead"
         },
         {
           "name": "Abu Talha",
+          "image": "images/team/Abu_Talha.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": "Co-Lead"
         },
         {
           "name": "Nafis Ashraf",
+          "image": "images/team/Nafis_Ashraf.jpg",
           "university": "BRAC University",
           "role": ""
         },
         {
           "name": "Riyadh",
+          "image": "images/team/Riyadh.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         }
@@ -140,21 +162,25 @@
       "members": [
         {
           "name": "Sibly Noman",
+          "image": "images/team/Sibly_Noman.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": "Lead"
         },
         {
           "name": "Talha Zubair (Information Missing)",
+          "image": "images/team/cat.jpg",
           "university": "Information Missing",
           "role": "Co-Lead"
         },
         {
           "name": "Farhan Hasan",
+          "image": "images/team/Farhan_Hasan.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         },
         {
           "name": "Md. Arafath Jaman Alif",
+          "image": "images/team/Md_Arafath_Jaman_Alif.jpg",
           "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         }

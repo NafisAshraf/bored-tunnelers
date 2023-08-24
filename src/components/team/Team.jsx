@@ -34,6 +34,7 @@ function Team(props) {
                 <div className="mx-3">
                   <Profile
                     name={member.name}
+                    image={member.image}
                     university={member.university}
                     role={member.role}
                   />
