@@ -7,6 +7,7 @@ import "./App.css";
 
 // Custom Components
 import Team from "./components/team/Team";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       </div> */}
 
       <Team />
+      <Footer />
     </React.Fragment>
   );
 }
