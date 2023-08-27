@@ -11,6 +11,7 @@ import Homepage from "./pages/homepage/Homepage";
 import testPage from "./pages/testPage";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
+import Timeline from "./components/timeline/Timeline";
 import BootstrapNavbar from "./components/header/BootstrapNavbar";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/team" element={<TeamPage />} />
+        <Route path="/our-story" element={<Timeline />} />
         <Route path="/test" element={<testPage />} />
       </Routes>
       <Footer />

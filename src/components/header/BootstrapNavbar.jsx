@@ -15,10 +15,10 @@ const BootstrapNavbar = () => {
                 className="myLogo"
                 src={logos}
                 alt="logo"
-                width="50"
-                height="50"
+                width="60"
+                height="60"
               />
-              <p className="logo-header" style={{ fontSize: "1.6rem" }}>
+              <p className="logo-header pb-1" style={{ fontSize: "1.7rem" }}>
                 Bored Tunnelers
               </p>
             </Navbar.Brand>
@@ -55,7 +55,7 @@ const BootstrapNavbar = () => {
                   </li>
 
                   <li class="nav-item mt-2 mt-lg-0 ">
-                    <Link class="nav-link text-white hover-line" to="/test">
+                    <Link class="nav-link text-white hover-line" to="/our-story">
                     <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
                       Our Story
                       </div>
