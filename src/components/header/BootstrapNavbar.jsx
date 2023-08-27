@@ -18,7 +18,7 @@ const BootstrapNavbar = () => {
                 width="60"
                 height="60"
               />
-              <p className="logo-header pb-1" style={{ fontSize: "1.7rem" }}>
+              <p className="logo-header pb-1" style={{ fontSize: "1.55rem" }}>
                 Bored Tunnelers
               </p>
             </Navbar.Brand>
