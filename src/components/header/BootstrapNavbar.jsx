@@ -15,10 +15,10 @@ const BootstrapNavbar = () => {
                 className="myLogo"
                 src={logos}
                 alt="logo"
-                width="60"
-                height="60"
+                width="50"
+                height="50"
               />
-              <p className="logo-header pb-1" style={{ fontSize: "1.7rem" }}>
+              <p className="logo-header" style={{ fontSize: "1.6rem" }}>
                 Bored Tunnelers
               </p>
             </Navbar.Brand>
