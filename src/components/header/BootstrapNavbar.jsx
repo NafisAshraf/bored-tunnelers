@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar } from "react-bootstrap";
 import logos from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
+import "./BootstrapNavbar.css";
 
 const BootstrapNavbar = () => {
   return (
@@ -43,41 +44,53 @@ const BootstrapNavbar = () => {
                 ></button>
               </div>
 
-              <div class="offcanvas-body d-flex mx-2 overflow-y-auto">
-                <ul class="nav flex-column flex-lg-row mb-auto">
-                  <li class="nav-item my-1">
-                    <Link class="nav-link text-white" to="/">
+              <div class="offcanvas-body py-2 d-flex mx-2 overflow-y-auto">
+                <ul class="nav flex-column flex-lg-row align-items-lg-center">
+                  <li class="nav-item ">
+                    <Link class="nav-link text-white hover-line" to="/">
+                      <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
                       Home
+                      </div>
                     </Link>
                   </li>
 
-                  <li class="nav-item my-1">
-                    <Link class="nav-link text-white" to="/test">
-                      About
+                  <li class="nav-item mt-2 mt-lg-0 ">
+                    <Link class="nav-link text-white hover-line" to="/test">
+                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
+                      Our Story
+                      </div>
                     </Link>
                   </li>
 
-                  <li class="nav-item my-1">
-                    <Link class="nav-link text-white" to="/team">
+                  <li class="nav-item mt-2 mt-lg-0">
+                    <Link class="nav-link text-white hover-line" to="/team">
+                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
                       Team
+                      </div>
                     </Link>
                   </li>
 
-                  <li class="nav-item my-1">
-                    <Link class="nav-link text-white" to="/test">
+                  <li class="nav-item mt-2 mt-lg-0">
+                    <Link class="nav-link text-white hover-line" to="/test">
+                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
                       Partners
+                      </div>
                     </Link>
                   </li>
 
-                  <li class="nav-item my-1">
-                    <Link class="nav-link text-white" to="/test">
+                  <li class="nav-item mt-2 mt-lg-0">
+                    <Link class="nav-link text-white hover-line" to="/test">
+                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
                       Technology
+                      </div>
                     </Link>
                   </li>
 
-                  <li class="nav-item my-1">
+                  <li class="nav-item mt-4 mt-lg-0">
                     <Link class="nav-link text-white" to="/test">
-                      News
+                    <button className="btn btn-primary rounded rounded-3" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
+                      Contact Us
+                      </button>
                     </Link>
                   </li>
                 </ul>
