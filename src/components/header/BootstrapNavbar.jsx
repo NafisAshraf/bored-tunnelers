@@ -18,7 +18,7 @@ const BootstrapNavbar = () => {
                 width="60"
                 height="60"
               />
-              <p className="logo-header pb-1" style={{ fontSize: "1.55rem" }}>
+              <p className="logo-header" style={{ fontSize: "1.55rem" }}>
                 Bored Tunnelers
               </p>
             </Navbar.Brand>
@@ -87,7 +87,7 @@ const BootstrapNavbar = () => {
                   </li>
 
                   <li class="nav-item mt-4 mt-lg-0">
-                    <Link class="nav-link text-white" to="/test">
+                    <Link class="nav-link text-white" to="/contact">
                     <button className="btn btn-primary rounded rounded-3" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
                       Contact Us
                       </button>

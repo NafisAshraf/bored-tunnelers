@@ -13,16 +13,27 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Timeline from "./components/timeline/Timeline";
 import BootstrapNavbar from "./components/header/BootstrapNavbar";
+import Contactpage from "./pages/contactpage/Contactpage";
+import AdminHome from "./pages/adminPage/adminHome";
 
 function App() {
   return (
     <React.Fragment>
       <BootstrapNavbar />
-      <Routes>
+      <Routes>AdminHome
         <Route path="/" element={<Homepage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/our-story" element={<Timeline />} />
+        <Route path="/contact" element={<Contactpage />} />
+        <Route path="/admin" element={<AdminHome />} />
         <Route path="/test" element={<testPage />} />
+        <Route
+          path="/*"
+          element={() => {
+            navigate("/");
+            return null;
+          }}
+        />
       </Routes>
       <Footer />
     </React.Fragment>
