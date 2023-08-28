@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./firebase-config";
-import styles from "./Contactpage.module.css";
+import styles from "../../styles/Contactpage.module.css";
+
 import locationpic from "./location.png";
 import callpic from "./call.png";
 import emailpic from "./mail.png";

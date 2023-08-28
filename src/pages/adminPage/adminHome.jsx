@@ -4,7 +4,7 @@ import { db } from './firebase-config';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import styles from './adminHome.module.css'
+import styles from '../../styles/adminHome.module.css'
 
 const AdminHome = () => {
   const [messages, setMessages] = useState([]);
