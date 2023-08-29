@@ -87,7 +87,7 @@ const BootstrapNavbar = () => {
                   </li>
 
                   <li class="nav-item mt-4 mt-lg-0">
-                    <Link class="nav-link text-white" to="/contact">
+                    <Link class="nav-link ms-2 p-0 text-white" to="/contact">
                     <button className="btn btn-primary rounded rounded-3" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
                       Contact Us
                       </button>

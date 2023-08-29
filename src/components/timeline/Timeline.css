@@ -1,3 +1,34 @@
+.top {
+  height: 250px;
+
+}
+
 .vertical-timeline::before {
     background: black !important;
   }
+  .vertical-timeline::before {
+    background: black !important;
+  }
+
+
+   /* Extra Small Devices, Phones */ 
+@media (min-width: 576px) and (max-width: 767px) {
+  .borderRight{
+    border-left: 0px solid #000000;
+  }
+  .borderLeft{
+    border-left: 0px solid #000000;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 767px) {
+  .borderLeft{
+    border-left: 4px solid #000000;
+  }
+  .borderRight{
+    border-right: 4px solid #000000;
+  }
+
+}

@@ -27,7 +27,13 @@ function App() {
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/test" element={<testPage />} />
-        
+        {/* <Route
+          path="/*"
+          element={() => {
+            navigate("/");
+            return null;
+          }}
+        /> */}
       </Routes>
       <Footer />
     </React.Fragment>
