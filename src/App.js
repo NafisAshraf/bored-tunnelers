@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 import "./App.css";
+import './styles/global.css';
 
 // Custom Components
 import TeamPage from "./pages/team/TeamPage";
