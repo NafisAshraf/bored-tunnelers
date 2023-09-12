@@ -1,4 +1,14 @@
+@media (min-width: 390px) {
+  .logo-header {
+    font-size: 1.55rem;
+  }
+}
 
+@media (max-width: 389.99px) {
+  .logo-header {
+    font-size: 1.35rem;
+  }
+}
 
 @media (min-width: 992px) {
   .offcanvas-body .nav-link.hover-line {
