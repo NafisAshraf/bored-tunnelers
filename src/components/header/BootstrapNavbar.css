@@ -1,10 +1,20 @@
-@media (min-width: 390px) {
+/* Tab Width */
+@media (min-width: 1200px) {
   .logo-header {
     font-size: 1.7rem;
   }
 }
 
-@media (max-width: 389.99px) {
+
+/* Small Phones Width */
+@media (min-width: 400px) and (max-width: 1199px) {
+  .logo-header {
+    font-size: 1.55rem;
+  }
+}
+
+/* Larger than phone */
+@media (max-width: 399.99px) {
   .logo-header {
     font-size: 1.35rem;
   }
