@@ -1,24 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import videoBg from '../../assets/vid3.mp4'
+import './homepage.css'
 
 const Homepage = () => {
   return (
     <>
+    <div className="mainn">
+              <video src={videoBg} autoPlay  />
+          </div>
       <div className="container my-5">
         <div className="p-5 text-center bg-body-tertiary rounded-3">
-          <img src="images/logo.png" alt="logo" className="bi mt-2 " width="250" height="250"/>
+          {/* <img src="images/logo.png" alt="logo" className="bi mt-2 " width="250" height="250" />
           <h1 className="display-5 fw-bold py-3">Bored Tunnelers</h1>
           <p className="col-lg-8 mx-auto fs-5 text-muted lh-lg">
-          Redefining the future of tunneling technology as 
-          the first ever team from Bangladesh participating 
-          in Elon Musk's Not-a-Boring competition 2024.
-          We are a dynamic team of tunneling enthusiasts 
-          who are passionate about pushing the boundaries 
-          of what's possible underground. With a shared 
-          dedication to innovation, expertise, and teamwork, 
-          we are committed to revolutionizing the tunneling 
-          industry and making a lasting impact.
-          </p>
+            Redefining the future of tunneling technology as
+            the first ever team from Bangladesh participating
+            in Elon Musk's Not-a-Boring competition 2024.
+            We are a dynamic team of tunneling enthusiasts
+            who are passionate about pushing the boundaries
+            of what's possible underground. With a shared
+            dedication to innovation, expertise, and teamwork,
+            we are committed to revolutionizing the tunneling
+            industry and making a lasting impact.
+          </p> */}
+          
+          
           {/* <div className="d-inline-flex gap-2 mb-5">
             <button
               className="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
@@ -44,14 +51,14 @@ const Homepage = () => {
             <h1 className="text-body-emphasis">Our Team</h1>
             {/* <h1 className="display-5 fw-bold py-3">Our Team</h1> */}
             <p className="col-lg-8 mx-auto lead lh-lg">
-            Our diverse team brings together talented engineers, architects, geologists, and tunneling experts who have honed their skills through years of experience. Together, we possess a deep understanding of underground construction, drilling technologies, and sustainable tunneling methods.
+              Our diverse team brings together talented engineers, architects, geologists, and tunneling experts who have honed their skills through years of experience. Together, we possess a deep understanding of underground construction, drilling technologies, and sustainable tunneling methods.
             </p>
             <Link to="/team">
               <button className="btn btn-outline-secondary px-5 mb-5" type="button">
                 Team Members
               </button>
             </Link>
-            
+
           </div>
         </div>
       </div>
@@ -65,7 +72,7 @@ const Homepage = () => {
             className="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill"
             aria-label="Close"
           ></button>
-          <img src="images/logo.png" alt="logo" className="bi mt-2 mb-5" width="250" height="250"/>
+          <img src="images/logo.png" alt="logo" className="bi mt-2 mb-5" width="250" height="250" />
           <h1 className="text-body-emphasis">Placeholder jumbotron</h1>
           <p className="col-lg-6 mx-auto mb-4">
             This faded back jumbotron is useful for placeholder content. It's
