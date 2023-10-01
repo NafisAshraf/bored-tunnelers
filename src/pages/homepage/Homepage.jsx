@@ -10,8 +10,8 @@ const Homepage = () => {
               <video src={videoBg} autoPlay  />
           </div> */}
       <div className="container my-5">
-        <div className="p-5 text-center bg-body-tertiary rounded-3">
-          {/* <img src="images/logo.png" alt="logo" className="bi mt-2 " width="250" height="250" />
+        {/* <div className="p-5 text-center bg-body-tertiary rounded-3">
+          <img src="images/logo.png" alt="logo" className="bi mt-2 " width="250" height="250" />
           <h1 className="display-5 fw-bold py-3">Bored Tunnelers</h1>
           <p className="col-lg-8 mx-auto fs-5 text-muted lh-lg">
             Redefining the future of tunneling technology as
@@ -23,9 +23,9 @@ const Homepage = () => {
             dedication to innovation, expertise, and teamwork,
             we are committed to revolutionizing the tunneling
             industry and making a lasting impact.
-          </p> */}
+          </p>
 
-          {/* <div className="d-inline-flex gap-2 mb-5">
+          <div className="d-inline-flex gap-2 mb-5">
             <button
               className="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
               type="button"
@@ -38,8 +38,8 @@ const Homepage = () => {
             >
               Secondary link
             </button>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </div>
 
       <div className="b-example-divider"></div>
