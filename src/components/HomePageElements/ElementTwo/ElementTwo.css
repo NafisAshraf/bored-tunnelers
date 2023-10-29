@@ -1,0 +1,20 @@
+@media (min-width: 1400px) {
+    .special {
+      margin-left: -100px;
+      padding: 20px;
+    }
+  }
+
+  @media (min-width: 400px) {
+    .special {
+      padding: 20px;
+    }
+
+    .imgg {
+      width: 100%;
+      min-width: 100%;
+    }
+
+
+  }
+

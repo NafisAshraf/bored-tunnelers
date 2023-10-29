@@ -18,9 +18,7 @@ const BootstrapNavbar = () => {
                 width="60"
                 height="60"
               />
-              <p className="logo-header" >
-                Bored Tunnelers
-              </p>
+              <p className="logo-header">Bored Tunnelers</p>
             </Navbar.Brand>
           </Link>
 
@@ -48,48 +46,73 @@ const BootstrapNavbar = () => {
                 <ul class="nav flex-column flex-lg-row align-items-lg-center">
                   <li class="nav-item ">
                     <Link class="nav-link text-white hover-line" to="/">
-                      <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
-                      Home
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Home
                       </div>
                     </Link>
                   </li>
 
                   <li class="nav-item mt-2 mt-lg-0 ">
-                    <Link class="nav-link text-white hover-line" to="/our-story">
-                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
-                      Our Story
+                    <Link
+                      class="nav-link text-white hover-line"
+                      to="/our-story"
+                    >
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Our Story
                       </div>
                     </Link>
                   </li>
 
                   <li class="nav-item mt-2 mt-lg-0">
                     <Link class="nav-link text-white hover-line" to="/team">
-                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
-                      Team
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Team
                       </div>
                     </Link>
                   </li>
 
                   <li class="nav-item mt-2 mt-lg-0">
-                    <Link class="nav-link text-white hover-line" to="/test">
-                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
-                      Partners
+                    <Link class="nav-link text-white hover-line" to="/featuredPage">
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Featured
                       </div>
                     </Link>
                   </li>
 
                   <li class="nav-item mt-2 mt-lg-0">
-                    <Link class="nav-link text-white hover-line" to="/test">
-                    <div data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
-                      Technology
+                    <Link
+                      class="nav-link text-white hover-line"
+                      to="/technology"
+                    >
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Technology
                       </div>
                     </Link>
                   </li>
 
                   <li class="nav-item mt-4 mt-lg-0">
                     <Link class="nav-link ms-2 p-0 text-white" to="/contact">
-                    <button className="btn btn-primary rounded rounded-3" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu">
-                      Contact Us
+                      <button
+                        className="btn btn-primary rounded rounded-3"
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Contact Us
                       </button>
                     </Link>
                   </li>

@@ -1,6 +1,64 @@
 {
   "teams": [
     {
+      "name": "Advisors",
+      "members": [
+        {
+          "name": "Prof Dr. Ahmad Athif",
+          "image": "images/team/cat.jpg",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Director, Centre for Artificial Intelligence and Robotics (CAIRO)"
+        },
+        {
+          "name": "Salman Promon Khan",
+          "image": "images/team/cat.jpg",
+          "university": "Universiti of Houston, Texas, USA",
+          "role": "Graduate Teaching and Research Fellow"
+        }
+      ]
+    },
+    {
+      "name": "Board Members",
+      "members": [
+        {
+          "name": "Shaekh Mohammad Shithil",
+          "image": "images/team/Shaekh_Mohammad_Shithil.jpg",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Team Lead"
+        },
+        {
+          "name": "M Shahriar Iqbal",
+          "image": "images/team/M_Shahriar_Iqbal.jpg",
+          "university": "RUET",
+          "role": "Team Co-Lead"
+        },
+        {
+          "name": "Fahin Uddin Enam",
+          "image": "images/team/Fahin_Uddin_Enam.jpg",
+          "university": "BRAC University",
+          "role": "Team Tech - Lead"
+        },
+        {
+          "name": "Md. Imran Khan",
+          "image": "images/team/Md_Imran_Khan.jpg",
+          "university": "BUET",
+          "role": "Board Member"
+        },
+        {
+          "name": "Talha Zubair (Information Missing)",
+          "image": "images/team/cat.jpg",
+          "university": "Notre Dame College",
+          "role": "Board Member"
+        },
+        {
+          "name": "Sibly Noman",
+          "image": "images/team/Sibly_Noman.jpg",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Board Member"
+        }
+      ]
+    },
+    {
       "name": "Front End/Cutterhead Team",
       "members": [
         {

@@ -1,0 +1,53 @@
+.gradient-border {
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, green, red) 1;
+  border-image-slice: 1;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.disappear {
+  display: block;
+}
+
+
+
+@media (max-width: 1400px) {
+  .big{
+    display: none;
+  }
+
+  .small{
+    display: block;
+  }
+  .center-text {
+    text-align: center;
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  
+}
+
+@media (min-width: 1401px) {
+
+  .big{
+    display: block;
+  }
+
+  .small{
+    display: none;
+  }
+  .center-text {
+    text-align: center;
+  }
+
+  .disappear {
+    padding: 0px;
+    display: block;
+  }
+}
