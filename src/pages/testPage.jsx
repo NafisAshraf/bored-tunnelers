@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react'
 
 const testPage = () => {
-  return <h1>TEST PAGE</h1>;
-};
+  return (
+  
+      <h1>TEST PAGE TO TEST ROUTING</h1>
+  
+  )
+}
 
-export default testPage;
+export default testPage

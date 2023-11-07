@@ -1,7 +1,5 @@
 import React from "react";
-import pic from "./Pciture1E3.png";
 import styles from "./ElementThree.module.css";
-import { Link } from "react-router-dom";
 
 const ElementThree = () => {
   return (

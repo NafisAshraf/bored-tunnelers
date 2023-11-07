@@ -1,6 +1,5 @@
 import React from "react";
 import "../../components/technology/technology.css";
-import TechnologyFeatures from "../../components/technology/TechnologyFeatures";
 import NavigationSystem from "../../components/technology/NavigationSystem";
 import Cutterhead from "../../components/technology/Cutterhead";
 

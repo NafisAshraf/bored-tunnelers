@@ -18,7 +18,7 @@ function TechnologyFeatures() {
           <div className="col-6">
             <img
               src="images/tbm_vertical2.jpeg"
-              alt="Cutter Head Image"
+              alt="Cutter Head"
               className="img-fluid"
             />
           </div>
