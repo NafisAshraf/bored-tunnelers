@@ -55,7 +55,7 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
-                  <li class="nav-item mt-2 mt-lg-0 ">
+                  {/* <li class="nav-item mt-2 mt-lg-0 ">
                     <Link
                       class="nav-link text-white hover-line"
                       to="/our-story"
@@ -65,6 +65,16 @@ const BootstrapNavbar = () => {
                         data-bs-target="#sidebarMenu"
                       >
                         Our Story
+                      </div>
+                    </Link>
+                  </li> */}
+                  <li class="nav-item mt-2 mt-lg-0 ">
+                    <Link class="nav-link text-white hover-line" to="/about">
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        About Us
                       </div>
                     </Link>
                   </li>
@@ -81,7 +91,10 @@ const BootstrapNavbar = () => {
                   </li>
 
                   <li class="nav-item mt-2 mt-lg-0">
-                    <Link class="nav-link text-white hover-line" to="/featuredPage">
+                    <Link
+                      class="nav-link text-white hover-line"
+                      to="/featuredPage"
+                    >
                       <div
                         data-bs-dismiss="offcanvas"
                         data-bs-target="#sidebarMenu"

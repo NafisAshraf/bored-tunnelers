@@ -18,6 +18,7 @@ import Contactpage from "./pages/contactpage/Contactpage";
 import AdminHome from "./pages/adminPage/adminHome";
 import TechnologyPage from "./pages/technology/TechnologyPage";
 import FeaturedPage from "./pages/featuredPage/FeaturedPage";
+import AboutUs from "./pages/aboutUs/AboutUs";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/featuredPage" element={<FeaturedPage />} />
         <Route path="/test" element={<testPage />} />
-        
+        <Route path="/about" element={<AboutUs />} />
+
         {/* <Route
           path="/*"
           element={() => {

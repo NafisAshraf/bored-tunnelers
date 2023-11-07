@@ -1,0 +1,41 @@
+@media (min-width: 992px) {
+  .dynamic-paddingx {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .dynamic-heading {
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+  .dynamic-text {
+    font-size: 2rem;
+    color: #f0f0f0;
+    /* font-weight: bold; */
+  }
+
+  .image-heading {
+    width: 90%;
+  }
+}
+
+@media (max-width: 991px) {
+  .dynamic-paddingx {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .dynamic-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffa500;
+  }
+  .dynamic-text {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+    /* font-weight: bold; */
+  }
+  .image-heading {
+    width: 90%;
+  }
+}
