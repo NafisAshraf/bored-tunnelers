@@ -5,7 +5,6 @@ import Card from "react-bootstrap/Card";
 import "./App.css";
 import "./styles/global.css";
 
-
 // Custom Components
 import TeamPage from "./pages/team/TeamPage";
 import Footer from "./components/footer/Footer";
@@ -20,29 +19,24 @@ import AdminHome from "./pages/adminPage/adminHome";
 import TechnologyPage from "./pages/technology/TechnologyPage";
 import FeaturedPage from "./pages/featuredPage/FeaturedPage";
 import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
+import AboutUs from "./pages/aboutUs/AboutUs";
 
 function App() {
-  
-
-
-
   return (
     <React.Fragment>
       <BootstrapNavbar />
       <Routes>
-
-
-        
         <Route path="/" element={<Homepage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/our-story" element={<Timeline />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/technology" element={<TechnologyPage />} />
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/featuredPage" element={<FeaturedPage />} />
         <Route path="/sponsorship" element={<SponsorshipPage />} />
         <Route path="/test" element={<testPage />} />
-        
+
         {/* <Route
           path="/*"
           element={() => {
