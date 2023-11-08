@@ -118,6 +118,20 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
+                  <li class="nav-item mt-2 mt-lg-0">
+                    <Link
+                      class="nav-link text-white hover-line"
+                      to="/sponsorship"
+                    >
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Sponsorship
+                      </div>
+                    </Link>
+                  </li>
+
                   <li class="nav-item mt-4 mt-lg-0">
                     <Link class="nav-link ms-2 p-0 text-white" to="/contact">
                       <button

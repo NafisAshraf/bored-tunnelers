@@ -70,7 +70,7 @@ const Cutterhead = () => {
               alt="tunnel"
               style={{ width: "100%" }}
             />
-            <h4 className="px-3 text-white lh-base dynamic-text">
+            <p className="px-3 text-white lh-base dynamic-text">
               The muck removal process is often aided by pumps, augers, and
               settling tanks, which separate solids from the slurry for
               efficient disposal or reuse. Efficient muck removal is paramount
@@ -79,7 +79,7 @@ const Cutterhead = () => {
               removal system must align with the geological conditions and
               project requirements to ensure seamless excavation and material
               transport.
-            </h4>
+            </p>
           </div>
         </div>
       </div>
