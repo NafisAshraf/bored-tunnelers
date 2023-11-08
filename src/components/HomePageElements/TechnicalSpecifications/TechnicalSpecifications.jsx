@@ -17,7 +17,7 @@ const TechnicalSpecifications = () => {
           style={{ width: "100%" }}
         />
         <a href="/technology">
-          <button className="btn btn-lg bg-dark text-white fw-bold px-4 py-2 mt-3 rounded-0">
+          <button className="btn btn-lg btn-dark text-white fw-bold px-4 py-2 mt-3 rounded-0">
             View Details
           </button>
         </a>
