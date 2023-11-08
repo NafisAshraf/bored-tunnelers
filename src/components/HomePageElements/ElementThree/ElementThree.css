@@ -1,3 +1,51 @@
+@media (min-width: 992px) {
+  .e3-dynamic-paddingx {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .e3-dynamic-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .e3-dynamic-text {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+  }
+  .parent {
+    position: relative;
+  }
+  .bd-pattern {
+    position: absolute;
+    right: 0px;
+    height: 10%;
+  }
+  .e3-button-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .e3-dynamic-paddingx {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .e3-dynamic-heading {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ffa500;
+  }
+  .e3-dynamic-text {
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+  }
+  .bd-pattern {
+    display: none;
+  }
+}
+
+/* Talha */
 .gradient-border {
   border: 5px solid transparent;
   border-image: linear-gradient(to right, green, red) 1;
@@ -12,14 +60,12 @@
   display: block;
 }
 
-
-
 @media (max-width: 1400px) {
-  .big{
+  .big {
     display: none;
   }
 
-  .small{
+  .small {
     display: block;
   }
   .center-text {
@@ -29,17 +75,14 @@
   .disappear {
     display: none;
   }
-
-  
 }
 
 @media (min-width: 1401px) {
-
-  .big{
+  .big {
     display: block;
   }
 
-  .small{
+  .small {
     display: none;
   }
   .center-text {

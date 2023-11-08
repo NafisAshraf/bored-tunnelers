@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ElementThree.module.css";
+import "./ElementThree.css";
 
 const ElementThree = () => {
   return (
@@ -32,13 +32,11 @@ const ElementThree = () => {
         </div>
       </div> */}
       <hr />
-      <div
-        className={`container pb-5 d-flex flex-column align-items-center ${styles["parent"]}`}
-      >
+      <div className="container pb-5 d-flex flex-column align-items-center parent">
         <div className="row">
           <div className="col-md-6">
             <img
-              className={`${styles["bd-pattern"]}`}
+              className="bd-pattern"
               src="images/bd-pattern.png"
               alt="pattern"
             />
@@ -50,12 +48,12 @@ const ElementThree = () => {
           </div>
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
             <h1
-              className={`${styles["dynamic-heading"]} py-3`}
+              className="e3-dynamic-heading py-3"
               style={{ color: "#2e2e2e" }}
             >
               Team BORED TUNNELERS
             </h1>
-            <p className={`${styles["dynamic-text"]} `}>
+            <p className="e3-dynamic-text ">
               Team BORED TUNNELERS is the only South Asian Team to be qualified
               for the Finals in Elon Musk's Not-A-Boring Competition. Their
               proposed solution Micro Tunnelling Boring Technology has the
@@ -65,13 +63,13 @@ const ElementThree = () => {
             <div className="pt-3">
               <a href="/about">
                 <button className="btn btn-dark px-4 py-2 mx-2 ">
-                  <div className={`${styles["dynamic-text"]}`}> About Us </div>
+                  <div className="e3-dynamic-text"> About Us </div>
                 </button>
               </a>
 
               <a href="/team">
                 <button className="btn btn-secondary px-4 py-2 mx-2">
-                  <div className={`${styles["dynamic-text"]}`}> Our Team </div>
+                  <div className="e3-dynamic-text"> Our Team </div>
                 </button>
               </a>
             </div>
