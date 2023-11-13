@@ -3,7 +3,7 @@ import "./Introduction.css";
 
 const Introduction = () => {
   return (
-    <div className="container-fluid bg-black py-4 dynamic-paddingx">
+    <div className="container-fluid bg-black py-4 dynamic-paddingx border-top border-light">
       <div className="container px-5">
         <div className="row py-5">
           <h1 className="dynamic-heading px-lg-3 pb-3">

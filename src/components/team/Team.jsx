@@ -2,8 +2,9 @@ import React from "react";
 import Heading from "./Heading";
 import Profile from "./Profile";
 import teamData from "./teamData.json";
+import "../header.css";
 
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function TeamMember({ member }) {
@@ -39,21 +40,22 @@ function TeamMember({ member }) {
 
 function Team(props) {
   return (
-    <div className="container">
-      {teamData.teams.map((team) => (
-        <div className="bg-white rounded rounded-5" key={team.name}>
-          <Heading heading={team.name} />
+    <div className="bg-white below-header">
+      <div className="container pt-sm-2">
+        {teamData.teams.map((team) => (
+          <div className="bg-white rounded rounded-5" key={team.name}>
+            <Heading heading={team.name} />
 
-          <div className="row justify-content-center">
-            {team.members.map((member) => (
-              <TeamMember key={member.name} member={member} />
-            ))}
+            <div className="row justify-content-center">
+              {team.members.map((member) => (
+                <TeamMember key={member.name} member={member} />
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
 
 export default Team;
-

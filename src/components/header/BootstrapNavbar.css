@@ -1,10 +1,22 @@
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navigation-bar.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
 /* Tab Width */
 @media (min-width: 1200px) {
   .logo-header {
     font-size: 1.7rem;
   }
 }
-
 
 /* Small Phones Width */
 @media (min-width: 400px) and (max-width: 1199px) {
@@ -22,72 +34,64 @@
 
 @media (min-width: 992px) {
   .offcanvas-body .nav-link.hover-line {
-  
-  position: relative; 
-  transition: color 0.3s ease-in-out;
-}
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
 
-.offcanvas-body .nav-link.hover-line::after {
-  content: ""; 
-  position: absolute;
-  left: 0; 
-  bottom: -5px; 
-  width: 100%; 
-  height: 3px; 
-  background-color: #fff; 
-  opacity: 0; 
-  transition: opacity 0.3s ease-in-out;
-}
+  .offcanvas-body .nav-link.hover-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
 
-.offcanvas-body .nav-link.hover-line:hover {
-  color: #fff;
-}
+  .offcanvas-body .nav-link.hover-line:hover {
+    color: #fff;
+  }
 
-
-.offcanvas-body .nav-link.hover-line:hover::after {
-  opacity: 1; 
+  .offcanvas-body .nav-link.hover-line:hover::after {
+    opacity: 1;
+  }
 }
-}
-
 
 @media (max-width: 992px) {
+  .offcanvas-body .nav-link {
+    transition: background-color 0.3s ease-in-out;
+  }
 
+  .offcanvas-body .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
-.offcanvas-body .nav-link {
-  transition: background-color 0.3s ease-in-out;
+  .offcanvas-body .btn {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  .offcanvas-body .btn:hover {
+    background-color: #fff;
+    color: #333;
+  }
 }
-
-.offcanvas-body .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.offcanvas-body .btn {
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.offcanvas-body .btn:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-}
-
-
 
 @media (max-width: 991.98px) {
-  .offcanvas-header .navbar-brand{
+  .offcanvas-header .navbar-brand {
     padding-bottom: 1.3rem;
   }
 
   .offcanvas-body {
     width: 100%;
     padding-top: 0 !important;
-  
+
     /* background-color: #2261a1; */
   }
-  
+
   .offcanvas-lg {
-      width: 275px !important;
-      /* background-color: #031220; */
-    }
+    width: 275px !important;
+    /* background-color: #031220; */
+  }
 }

@@ -27,7 +27,6 @@ const Contactpage = () => {
       return;
     }
 
-
     try {
       await addDoc(collection(db, "Messages"), {
         firstName,
@@ -49,7 +48,6 @@ const Contactpage = () => {
       alert("Error adding document: " + error.message);
     }
   };
-
 
   return (
     <section>
@@ -90,7 +88,7 @@ const Contactpage = () => {
         <div className={styles.contactForm}>
           <h2>Send us a Message</h2>
           <div className={styles.formBox}>
-            <div className={styles.inputBox + ' ' + styles.w50}>
+            <div className={styles.inputBox + " " + styles.w50}>
               <input
                 type="text"
                 name="firstName"
@@ -100,7 +98,7 @@ const Contactpage = () => {
               />
               <span>First Name</span>
             </div>
-            <div className={styles.inputBox + ' ' + styles.w50}>
+            <div className={styles.inputBox + " " + styles.w50}>
               <input
                 type="text"
                 name="lastName"
@@ -110,7 +108,7 @@ const Contactpage = () => {
               />
               <span>Last Name</span>
             </div>
-            <div className={styles.inputBox + ' ' + styles.w50}>
+            <div className={styles.inputBox + " " + styles.w50}>
               <input
                 type="email"
                 name="email"
@@ -120,7 +118,7 @@ const Contactpage = () => {
               />
               <span>Email Address</span>
             </div>
-            <div className={styles.inputBox + ' ' + styles.w50}>
+            <div className={styles.inputBox + " " + styles.w50}>
               <input
                 type="text"
                 name="mobileNumber"
@@ -130,7 +128,7 @@ const Contactpage = () => {
               />
               <span>Mobile Number</span>
             </div>
-            <div className={styles.inputBox + ' ' + styles.w100}>
+            <div className={styles.inputBox + " " + styles.w100}>
               <textarea
                 name="message"
                 value={message}
@@ -139,25 +137,25 @@ const Contactpage = () => {
               ></textarea>
               <span>Write your message here...</span>
             </div>
-            <div className={styles.inputBox + ' ' + styles.w100}>
+            <div className={styles.inputBox + " " + styles.w100}>
               <input type="submit" value="Send" onClick={handleSubmit} />
             </div>
           </div>
         </div>
         {/* Bootstrap Modal for Success Message */}
-      <Modal show={showModal} onHide={handleCloseModal}>
-        <Modal.Header closeButton>
-          <Modal.Title>Message Submitted</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          Thank you for submitting your message. We will get back to you soon.
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" onClick={handleCloseModal}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+        <Modal show={showModal} onHide={handleCloseModal}>
+          <Modal.Header closeButton>
+            <Modal.Title>Message Submitted</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            Thank you for submitting your message. We will get back to you soon.
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="primary" onClick={handleCloseModal}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </section>
   );

@@ -12,10 +12,10 @@ const Featured = () => {
       <div className="row">
         <div className="col-12 p-0 d-flex justify-content-center align-items-center">
           <div className="position-relative">
-            <h1 className="text-center text-light">
+            {/* <h1 className="text-center text-light">
               Team Bored Tunnellers has been featured in many local &
               international newspapers & media outlets
-            </h1>
+            </h1> */}
             <div className="d-flex flex-wrap">
               <div className="col-12 col-md-4 p-2">
                 <img

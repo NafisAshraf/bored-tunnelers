@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "react-bootstrap";
 import logos from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import "./BootstrapNavbar.css";
 
 const BootstrapNavbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <nav class="navbar bg-dark flex-lg-nowrap py-2" data-bs-theme="dark">
+      <nav
+        className={`navigation-bar navbar flex-lg-nowrap py-2 ${
+          scrolled ? "scrolled" : ""
+        }`}
+        data-bs-theme="dark"
+      >
         <div className="container-lg container-fluid">
           <Link to="/" className="text-decoration-none">
             <Navbar.Brand className="d-flex align-items-center gap-2">
