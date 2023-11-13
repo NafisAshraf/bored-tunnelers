@@ -5,6 +5,7 @@ import ElementTwo from "../../components/HomePageElements/ElementTwo/ElementTwo"
 import ElementThree from "../../components/HomePageElements/ElementThree/ElementThree";
 import TechnicalSpecifications from "../../components/HomePageElements/TechnicalSpecifications/TechnicalSpecifications";
 import videoSource from "./video.mp4";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -21,7 +22,9 @@ const Homepage = () => {
             First South Asian team to reach the finals of NOT-A-BORING
             competition
           </p>
-          <button className="btn btn-lg btn-primary mt-3">Learn More</button>
+          <Link to="/about">
+            <button className="btn btn-lg btn-primary mt-3">Learn More</button>
+          </Link>
         </div>
       </div>
       <div className="content bg-white z-1 pt-3">
