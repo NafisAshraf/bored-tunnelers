@@ -26,12 +26,12 @@ const BootstrapNavbar = () => {
   return (
     <>
       <nav
-        className={`navigation-bar navbar flex-lg-nowrap py-2 ${
+        className={`navigation-bar navbar flex-xl-nowrap py-2 ${
           scrolled ? "scrolled" : ""
         }`}
         data-bs-theme="dark"
       >
-        <div className="container-lg container-fluid">
+        <div className="container-xl container-fluid">
           <Link to="/" className="text-decoration-none">
             <Navbar.Brand className="d-flex align-items-center gap-2">
               <img
@@ -47,7 +47,7 @@ const BootstrapNavbar = () => {
 
           <div class="sidebar ">
             <div
-              class="offcanvas-lg offcanvas-end"
+              class="offcanvas-xl offcanvas-end"
               tabindex="-1"
               id="sidebarMenu"
             >
@@ -66,7 +66,7 @@ const BootstrapNavbar = () => {
               </div>
 
               <div class="offcanvas-body py-2 d-flex mx-2 overflow-y-auto">
-                <ul class="nav flex-column flex-lg-row align-items-lg-center">
+                <ul class="nav flex-column flex-xl-row align-items-xl-center">
                   <li class="nav-item ">
                     <Link class="nav-link text-white hover-line" to="/">
                       <div
@@ -78,7 +78,7 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
-                  {/* <li class="nav-item mt-2 mt-lg-0 ">
+                  {/* <li class="nav-item mt-2 mt-xl-0 ">
                     <Link
                       class="nav-link text-white hover-line"
                       to="/our-story"
@@ -91,7 +91,7 @@ const BootstrapNavbar = () => {
                       </div>
                     </Link>
                   </li> */}
-                  <li class="nav-item mt-2 mt-lg-0 ">
+                  <li class="nav-item mt-2 mt-xl-0 ">
                     <Link class="nav-link text-white hover-line" to="/about">
                       <div
                         data-bs-dismiss="offcanvas"
@@ -102,7 +102,7 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
-                  <li class="nav-item mt-2 mt-lg-0">
+                  <li class="nav-item mt-2 mt-xl-0">
                     <Link class="nav-link text-white hover-line" to="/team">
                       <div
                         data-bs-dismiss="offcanvas"
@@ -113,7 +113,7 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
-                  <li class="nav-item mt-2 mt-lg-0">
+                  <li class="nav-item mt-2 mt-xl-0">
                     <Link
                       class="nav-link text-white hover-line"
                       to="/featuredPage"
@@ -127,7 +127,7 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
-                  <li class="nav-item mt-2 mt-lg-0">
+                  <li class="nav-item mt-2 mt-xl-0">
                     <Link
                       class="nav-link text-white hover-line"
                       to="/technology"
@@ -141,7 +141,7 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
-                  <li class="nav-item mt-2 mt-lg-0">
+                  <li class="nav-item mt-2 mt-xl-0">
                     <Link
                       class="nav-link text-white hover-line"
                       to="/sponsorship"
@@ -155,7 +155,7 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
-                  <li class="nav-item mt-4 mt-lg-0">
+                  <li class="nav-item mt-4 mt-xl-0">
                     <Link class="nav-link ms-2 p-0 text-white" to="/contact">
                       <button
                         className="btn btn-primary rounded rounded-3"
@@ -171,7 +171,7 @@ const BootstrapNavbar = () => {
             </div>
           </div>
 
-          <ul class="navbar-nav flex-row d-lg-none">
+          <ul class="navbar-nav flex-row d-xl-none">
             <li class="nav-item text-nowrap">
               <button
                 class="nav-link px-3 text-white bg-dark border-0"

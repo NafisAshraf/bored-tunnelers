@@ -48,12 +48,12 @@ const ElementThree = () => {
           </div>
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
             <h1
-              className="e3-dynamic-heading py-3"
+              className="e3-dynamic-heading py-3 text-sm-start text-center"
               style={{ color: "#2e2e2e" }}
             >
               Team BORED TUNNELERS
             </h1>
-            <p className="e3-dynamic-text ">
+            <p className="e3-dynamic-text text-sm-start text-center">
               Team BORED TUNNELERS is the only South Asian Team to be qualified
               for the Finals in Elon Musk's Not-A-Boring Competition. Their
               proposed solution Micro Tunnelling Boring Technology has the

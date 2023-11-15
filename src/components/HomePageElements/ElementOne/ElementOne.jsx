@@ -6,7 +6,7 @@ import pic3 from "./Picture3.jpg";
 
 const ElementOne = () => {
   return (
-    <div className="container my-5 px-5">
+    <div className="container my-5  px-2">
       <div className="row">
         <div className="col-md-6">
           <div className="d-flex flex-column align-items-center">
@@ -16,7 +16,7 @@ const ElementOne = () => {
               className="img-fluid mb-1"
               // style={{ maxWidth: "450px" }}
             />
-            <p className="dynamic-text text-black">
+            <p className="dynamic-text text-black text-sm-start text-center pb-3">
               The Not-A-Boring Competition is hosted every year since 2021 by
               Elon Musk's The Boring Company. It challenges participating teams
               from around the world to come up with tunneling solutions.
