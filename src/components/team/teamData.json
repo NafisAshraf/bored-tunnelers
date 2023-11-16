@@ -89,6 +89,11 @@
           "image": "images/team/Shaekh_Mohammad_Shithil.jpg"
         },
         {
+          "name": "Jamiul Haque",
+          "university": "MIST",
+          "image": "images/team/Jamiul_Haque.jpg"
+        },
+        {
           "name": "Jawadur Rahman",
           "university": "Mist",
           "image": "images/team/Jawadur_Rahman.jpg"
@@ -173,6 +178,35 @@
           "name": "Masfiqur Rahman",
           "university": "UTM",
           "image": "images/team/Masfiqur_Rahman.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Electronics & Software Team",
+      "members": [
+        {
+          "name": "Al Mominul Haque Badhan",
+          "image": "images/team/Al_Mominul_Haque_Badhan.jpg",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Lead"
+        },
+        {
+          "name": "Abu Talha",
+          "image": "images/team/Abu_Talha.jpg",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": "Co-Lead"
+        },
+        {
+          "name": "Nafis Ashraf",
+          "image": "images/team/Nafis_Ashraf.jpg",
+          "university": "BRAC University",
+          "role": ""
+        },
+        {
+          "name": "Riyadh",
+          "image": "images/team/Riyadh.jpg",
+          "university": "Universiti Teknologi Malaysia (UTM)",
+          "role": ""
         }
       ]
     }
