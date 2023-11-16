@@ -182,30 +182,18 @@
       ]
     },
     {
-      "name": "Electronics & Software Team",
+      "name": "Software Team",
       "members": [
-        {
-          "name": "Al Mominul Haque Badhan",
-          "image": "images/team/Al_Mominul_Haque_Badhan.jpg",
-          "university": "Universiti Teknologi Malaysia (UTM)",
-          "role": "Lead"
-        },
         {
           "name": "Abu Talha",
           "image": "images/team/Abu_Talha.jpg",
-          "university": "Universiti Teknologi Malaysia (UTM)",
-          "role": "Co-Lead"
+          "university": "UTM",
+          "role": ""
         },
         {
           "name": "Nafis Ashraf",
           "image": "images/team/Nafis_Ashraf.jpg",
           "university": "BRAC University",
-          "role": ""
-        },
-        {
-          "name": "Riyadh",
-          "image": "images/team/Riyadh.jpg",
-          "university": "Universiti Teknologi Malaysia (UTM)",
           "role": ""
         }
       ]
