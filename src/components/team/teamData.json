@@ -154,6 +154,23 @@
       ]
     },
     {
+      "name": "Software Team",
+      "members": [
+        {
+          "name": "Abu Talha",
+          "image": "images/team/Abu_Talha.jpg",
+          "university": "UTM",
+          "role": ""
+        },
+        {
+          "name": "Nafis Ashraf",
+          "image": "images/team/Nafis_Ashraf.jpg",
+          "university": "BRAC University",
+          "role": ""
+        }
+      ]
+    },
+    {
       "name": "Media and Sponsor Team",
       "members": [
         {
@@ -178,23 +195,6 @@
           "name": "Masfiqur Rahman",
           "university": "UTM",
           "image": "images/team/Masfiqur_Rahman.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Software Team",
-      "members": [
-        {
-          "name": "Abu Talha",
-          "image": "images/team/Abu_Talha.jpg",
-          "university": "UTM",
-          "role": ""
-        },
-        {
-          "name": "Nafis Ashraf",
-          "image": "images/team/Nafis_Ashraf.jpg",
-          "university": "BRAC University",
-          "role": ""
         }
       ]
     }

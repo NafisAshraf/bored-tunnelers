@@ -1,5 +1,6 @@
 import React from "react";
 import "../../components/technology/technology.css";
+import GoFundMeWidget from "../../components/GoFundMe";
 
 const SponsorshipPage = () => {
   return (
@@ -149,6 +150,7 @@ const SponsorshipPage = () => {
           </div>
         </div>
       </div>
+      <GoFundMeWidget />
     </>
   );
 };
