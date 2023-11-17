@@ -1,0 +1,74 @@
+[
+  {
+    "option": "Advertisement on social media",
+    "silver": true,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "option": "Logo in website & banners",
+    "silver": true,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "option": "Invitation to all team events",
+    "silver": true,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "option": "Receive “Thank You” gift (Poster + T-shirt)",
+    "silver": true,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "option": "Logo on robot",
+    "silver": "S",
+    "gold": "M",
+    "platinum": "L"
+  },
+  {
+    "option": "Logo on apparels",
+    "silver": "S",
+    "gold": "M",
+    "platinum": "L"
+  },
+  {
+    "option": "Logo in team banner",
+    "silver": "S",
+    "gold": "M",
+    "platinum": "L"
+  },
+  {
+    "option": "Monthly team report",
+    "silver": true,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "option": "Robot available for company's event showcase",
+    "silver": false,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "option": "Distribution of promotion materials",
+    "silver": false,
+    "gold": true,
+    "platinum": true
+  },
+  {
+    "option": "Highly mentioned in published article",
+    "silver": false,
+    "gold": false,
+    "platinum": true
+  },
+  {
+    "option": "Custom benefit",
+    "silver": false,
+    "gold": false,
+    "platinum": true
+  }
+]

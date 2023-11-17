@@ -20,10 +20,12 @@ import TechnologyPage from "./pages/technology/TechnologyPage";
 import FeaturedPage from "./pages/featuredPage/FeaturedPage";
 import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <React.Fragment>
+      <ScrollToTop />
       <BootstrapNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />

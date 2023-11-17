@@ -3,56 +3,60 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className="container-fluid bg-dark text-white">
-      <div className="row justify-content-center py-4">
-        <div className="col-12 col-md-3 col-lg-2 text-center mt-4">
-          <h4 className="mb-4">FOLLOW US</h4>
-          <div className=" d-flex flex-row justify-content-center mt-4">
-            <a
-              href="https://www.facebook.com/bored.tunnelers"
-              className="social-icons mx-3"
-              target="_blank"
-            >
-              <i className="bi bi-facebook fs-4"></i>
-              {/* <p className="">Bored Tunnelers</p> */}
-            </a>
-            <a
-              href="https://www.instagram.com/bored.tunnelers/"
-              className="social-icons mx-3"
-              target="_blank"
-            >
-              <i className="bi bi-instagram fs-4"></i>
-              {/* <p className="">bored.tunnelers</p> */}
-            </a>
-            <a
-              href="https://www.linkedin.com/company/bored-tunnelers/about/"
-              className="social-icons mx-3"
-              target="_blank"
-            >
-              <i className="bi bi-linkedin fs-4"></i>
-              {/* <p className="">Bored Tunnelers</p> */}
-            </a>
-          </div>
-        </div>
-
-        <div className="col-12 col-md-3 col-lg-2 text-center mt-4">
-          <h4 className="mb-4">CONTACT</h4>
-          <div className=" d-flex flex-row justify-content-center mt-4">
-            <a href="/" className="social-icons mx-3">
-              <i className="bi bi-envelope-fill fs-4"></i>
-              {/* <p className="">Gmail ID</p> */}
-            </a>
-            <a href="/" className="social-icons mx-3">
-              <i className="bi bi-whatsapp fs-4"></i>
-              {/* <p className="">WhatsApp</p> */}
-            </a>
-            <a href="/" className="social-icons mx-3">
-              <i className="bi bi-messenger fs-4"></i>
-              {/* <p className="">Messenger</p> */}
-            </a>
-          </div>
-        </div>
+    <div className="container-fluid footer-background text-white pt-5">
+      <div className="text-center">
+        <p style={{ fontSize: "2.5rem", fontWeight: 700 }}>Bored Tunnelers</p>
       </div>
+      <div className="d-flex justify-content-center align-items-center py-3">
+        <a
+          className="social-links"
+          href="https://www.facebook.com/bored.tunnelers"
+        >
+          <img
+            className="social-icons mx-3"
+            src="/icons/facebook_bw.png"
+            alt="Facebook"
+          />
+        </a>
+        <a
+          className="social-links"
+          href="https://www.instagram.com/bored.tunnelers/"
+        >
+          <img
+            className="social-icons mx-3"
+            src="/icons/instagram_bw.png"
+            alt="Instagram"
+          />
+        </a>
+        <a
+          className="social-links"
+          href="https://www.linkedin.com/company/bored-tunnelers/about/"
+        >
+          <img
+            className="social-icons mx-3"
+            src="/icons/linkedin_bw.png"
+            alt="LinkedIn"
+          />
+        </a>
+        {/* <a className="social-links" href="/"> */}
+        {/* <img className="social-icons mx-3" src="/icons/gmail_bw.png" alt="gmail" /> */}
+        {/* </a> */}
+        <a className="social-links" href="/">
+          <img
+            className="social-icons mx-3"
+            src="/icons/whatsapp_bw.png"
+            alt="WhatsApp"
+          />
+        </a>
+        <a className="social-links" href="/">
+          <img
+            className="social-icons mx-3"
+            src="/icons/messenger_bw.png"
+            alt="Messenger"
+          />
+        </a>
+      </div>
+
       <div className="row py-4">
         <p className="text-center">
           &copy; 2023 Bored Tunnelers. All rights reserved.

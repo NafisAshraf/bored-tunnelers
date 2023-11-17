@@ -1,8 +1,18 @@
 import React from "react";
 import "../../components/technology/technology.css";
 import GoFundMeWidget from "../../components/GoFundMe";
+import sponsorshipData from "./sponsorshipData.json";
+import { Link } from "react-router-dom";
 
 const SponsorshipPage = () => {
+  const renderSponsorshipContent = (item) => {
+    if (typeof item === "boolean") {
+      return <i className="fas fa-check text-success"></i>;
+    } else {
+      return item;
+    }
+  };
+
   return (
     <>
       <div className="page-header">
@@ -11,146 +21,57 @@ const SponsorshipPage = () => {
           <p className="px-5 text-center"></p>
         </div>
       </div>
-      <div className="bg-white ">
-        <div
-          className=""
-          style={{ margin: "0 30px", fontSize: "20px", textAlign: "left" }}
-        >
-          <div className="table-responsive below-header">
-            <table className="table table-striped text-success table-border border-light mt-5">
-              <thead className="border-light">
-                <tr>
-                  <th scope="col" style={{ fontSize: "30px" }}>
-                    OPTIONS
-                  </th>
-                  <th scope="col" style={{ fontSize: "30px", color: "silver" }}>
-                    SILVER
-                  </th>
-                  <th scope="col" style={{ fontSize: "30px", color: "gold" }}>
-                    GOLD
-                  </th>
-                  <th
-                    scope="col"
-                    style={{ fontSize: "30px", color: "platinum" }}
-                  >
-                    PLATINUM
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    ADVERTISEMENT ON SOCIAL MEDIA
-                  </th>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    LOGO IN WEBSITE & BANNERS
-                  </th>
-                  <td style={{ fontSize: "18px" }}>
-                    <i className="fas fa-check"></i>✅
+      <div className="table-responsive below-header bg-white">
+        <div className="container pb-4 d-flex flex-column justify-content-center align-items-center">
+          <table className="table table-hover mt-5">
+            <thead>
+              <tr className="align-middle fs-3" style={{ height: "75px" }}>
+                <td scope="col">Sponsorship Perks</td>
+                <td className="text-center" scope="col">
+                  Silver
+                </td>
+                <td className="text-center" scope="col">
+                  Gold
+                </td>
+                <td className="text-center" scope="col">
+                  Platinum
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              {sponsorshipData.map((item, index) => (
+                <tr
+                  key={index}
+                  className="align-middle"
+                  style={{ height: "45px" }}
+                >
+                  <td>{item.option}</td>
+                  <td className="text-center" style={{ width: "20%" }}>
+                    {renderSponsorshipContent(item.silver)}
                   </td>
-                  <td style={{ fontSize: "18px" }}>
-                    <i className="fas fa-check"></i>✅
+                  <td className="text-center" style={{ width: "20%" }}>
+                    {renderSponsorshipContent(item.gold)}
                   </td>
-                  <td style={{ fontSize: "18px" }}>
-                    <i className="fas fa-check"></i>✅
+                  <td className="text-center" style={{ width: "20%" }}>
+                    {renderSponsorshipContent(item.platinum)}
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    INVITATION TO ALL TEAM EVENTS
-                  </th>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    RECEIVE “THANK YOU” GIFT (POSTER + T-SHIRT)
-                  </th>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    LOGO ON ROBOT
-                  </th>
-                  <td style={{ fontSize: "18px" }}>S</td>
-                  <td style={{ fontSize: "18px" }}>M</td>
-                  <td style={{ fontSize: "18px" }}>L</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    LOGO ON APPARELS
-                  </th>
-                  <td style={{ fontSize: "18px" }}>S</td>
-                  <td style={{ fontSize: "18px" }}>M</td>
-                  <td style={{ fontSize: "18px" }}>L</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    LOGO IN TEAM BANNER
-                  </th>
-                  <td style={{ fontSize: "18px" }}>S</td>
-                  <td style={{ fontSize: "18px" }}>M</td>
-                  <td style={{ fontSize: "18px" }}>L</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    MONTHLY TEAM REPORT
-                  </th>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    ROBOT AVAILABLE FOR COMPANY'S EVENT SHOWCASE
-                  </th>
-                  <td style={{ fontSize: "18px" }}></td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    DISTRIBUTION OF PROMOTION MATERIALS
-                  </th>
-                  <td style={{ fontSize: "18px" }}></td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    HIGHLY MENTIONED IN PUBLISHED ARTICLE
-                  </th>
-                  <td style={{ fontSize: "18px" }}></td>
-                  <td style={{ fontSize: "18px" }}></td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-                <tr>
-                  <th scope="row" style={{ fontSize: "18px" }}>
-                    CUSTOM BENEFIT
-                  </th>
-                  <td style={{ fontSize: "18px" }}></td>
-                  <td style={{ fontSize: "18px" }}></td>
-                  <td style={{ fontSize: "18px" }}>✅</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div style={{ textAlign: "center", marginTop: "20px" }}>
-            <a href="/contact" className="btn btn-primary mb-5">
-              CONTACT US TO BE A SPONSOR
-            </a>
-          </div>
+              ))}
+            </tbody>
+          </table>
+          <Link to="/contact">
+            <button className="btn btn-dark btn-lg rounded-0 mt-3">
+              Become a Sponsor
+            </button>
+          </Link>
         </div>
+        <hr className="pb-5" />
       </div>
-      <GoFundMeWidget />
+
+      <div className="container-fluid text-center bg-white">
+        <h2 className="pb-4">You Can Support Us Through GoFundMe As Well</h2>
+        <GoFundMeWidget />
+      </div>
     </>
   );
 };
