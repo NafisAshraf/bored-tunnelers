@@ -7,7 +7,11 @@ import { Link } from "react-router-dom";
 const SponsorshipPage = () => {
   const renderSponsorshipContent = (item) => {
     if (typeof item === "boolean") {
-      return <i className="fas fa-check text-success"></i>;
+      if (item === true) {
+        return <i className="fas fa-check text-success"></i>;
+      } else {
+        return null; // or any appropriate content if false
+      }
     } else {
       return item;
     }
