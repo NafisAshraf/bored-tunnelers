@@ -10,7 +10,7 @@ const SponsorshipPage = () => {
       if (item === true) {
         return <i className="fas fa-check text-success"></i>;
       } else {
-        return null; // or any appropriate content if false
+        return null;
       }
     } else {
       return item;
