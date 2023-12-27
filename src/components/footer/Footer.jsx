@@ -20,7 +20,7 @@ function Footer() {
         </a>
         <a
           className="social-links"
-          href="https://www.instagram.com/bored.tunnelers/"
+          href="https://www.instagram.com/boredtunnelers/"
         >
           <img
             className="social-icons mx-3"
@@ -30,7 +30,7 @@ function Footer() {
         </a>
         <a
           className="social-links"
-          href="https://www.linkedin.com/company/bored-tunnelers/about/"
+          href="https://www.linkedin.com/company/bored-tunnelers-bd/"
         >
           <img
             className="social-icons mx-3"
