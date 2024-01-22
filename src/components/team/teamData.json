@@ -81,7 +81,13 @@
         {
           "name": "Pritom Dutta",
           "university": "BRAC University",
-          "image": "images/team/Pritom_Dutta2.jpg"
+          "image": "images/team/Pritom_Dutta2.jpg",
+          "role": "Team Lead"
+        },
+        {
+          "name": "Nafis Sadique Niloy",
+          "university": "BRAC University",
+          "image": "images/team/Nafis_Sadique_Niloy.jpg"
         },
         {
           "name": "Shibly Noman",
@@ -107,7 +113,7 @@
           "name": "Nafis Ashraf",
           "image": "images/team/Nafis_Ashraf2.jpg",
           "university": "BRAC University",
-          "role": ""
+          "role": "Team Lead"
         },
         {
           "name": "Abu Talha",
@@ -123,7 +129,8 @@
         {
           "name": "Imran Khan",
           "university": "BUET",
-          "image": "images/team/Md_Imran_Khan2.jpg"
+          "image": "images/team/Md_Imran_Khan2.jpg",
+          "role":"Team Lead"
         }
       ]
     },
