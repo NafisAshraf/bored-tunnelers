@@ -75,7 +75,30 @@ const ElementThree = () => {
             </div>
           </div>
         </div>
+
+        
       </div>
+
+      <div className="container pb-5 d-flex flex-column align-items-center">
+
+      <div className="row">
+          <div className="col-md-6">
+            
+            <img
+              src="images/prothom_alo_group_photo.webp"
+              alt="team bangladesh"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
+          <img
+              src="images/working.jpg"
+              alt="team bangladesh"
+              style={{ width: "100%" }}
+            />
+          </div>
+      </div>
+        </div>
       <hr />
     </>
   );

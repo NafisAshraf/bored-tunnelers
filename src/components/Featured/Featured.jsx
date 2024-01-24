@@ -2,6 +2,7 @@ import React from "react";
 import pic1 from "./Picture1F.png";
 import pic2 from "./Picture2F.png";
 import pic3 from "./Picture3F.png";
+import prothomalo_feature from "./prothomalo_feature.jpg"
 
 const Featured = () => {
   return (
@@ -16,8 +17,10 @@ const Featured = () => {
               Team Bored Tunnellers has been featured in many local &
               international newspapers & media outlets
             </h1> */}
-            <div className="d-flex flex-wrap">
-              <div className="col-12 col-md-4 p-2">
+            <div className="container d-flex flex-wrap">
+              <div className="row">
+
+              <div className="col-12 col-md-6 p-2">
                 <img
                   className="img-fluid"
                   src={pic1}
@@ -25,7 +28,7 @@ const Featured = () => {
                   style={{ height: "100%", paddingLeft: "20px" }}
                 />
               </div>
-              <div className="col-12 col-md-4 p-2">
+              <div className="col-12 col-md-6 p-2">
                 <img
                   className="img-fluid"
                   src={pic2}
@@ -37,17 +40,34 @@ const Featured = () => {
                   }}
                 />
               </div>
-              <div className="col-12 col-md-4 p-2">
+              </div>
+
+              <div className="row">
+
+              <div className="col-12 col-md-6 p-2">
                 <img
                   className="img-fluid"
                   src={pic3}
                   alt="Feature 3"
                   style={{
                     height: "100%",
-                    width: "350px",
+                    width: "770px",
                     paddingLeft: "20px",
                   }}
                 />
+              </div>
+              <div className="col-12 col-md-6 p-2">
+                <img
+                  className="img-fluid"
+                  src={prothomalo_feature}
+                  alt="Feature 4"
+                  style={{
+                    height: "100%",
+                    width: "770px",
+                    paddingLeft: "20px",
+                  }}
+                />
+              </div>
               </div>
             </div>
           </div>
