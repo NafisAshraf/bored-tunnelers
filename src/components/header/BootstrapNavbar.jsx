@@ -144,6 +144,20 @@ const BootstrapNavbar = () => {
                   <li class="nav-item mt-2 mt-xl-0">
                     <Link
                       class="nav-link text-white hover-line"
+                      to="https://flic.kr/s/aHBqjBeTBf"
+                    >
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Gallery
+                      </div>
+                    </Link>
+                  </li>
+
+                  <li class="nav-item mt-2 mt-xl-0">
+                    <Link
+                      class="nav-link text-white hover-line"
                       to="/sponsorship"
                     >
                       <div

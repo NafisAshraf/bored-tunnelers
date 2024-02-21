@@ -21,6 +21,7 @@ import FeaturedPage from "./pages/featuredPage/FeaturedPage";
 import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ScrollToTop from "./pages/ScrollToTop";
+import TeamLoading from "./pages/teamLoading/TeamLoading";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
       <BootstrapNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/team" element={<TeamPage />} />
+        <Route path="/team" element={< TeamLoading /*TeamPage*//>} /> // Change to TeamPage when ready
         <Route path="/our-story" element={<Timeline />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/technology" element={<TechnologyPage />} />
