@@ -74,7 +74,7 @@ const Modal = () => {
   };
 
   const handleRedirect = (url) => {
-    window.location.href = url; // Redirect to the specified URL
+    window.location.href = url; 
   };
 
   return (
