@@ -55,6 +55,19 @@ const Modal = () => {
     marginBottom: '10px', // Remove default margin
   };
 
+
+  const buttonStyleRed = {
+    backgroundColor: 'red',
+    color: 'white',
+    border: 'none',
+    padding: '3px 5px',
+    borderRadius: '20px',
+    cursor: 'pointer',
+    width: '40%',
+    height: '3em', // Make buttons take full width
+    marginTop: '30px', // Remove default margin
+  };
+
   const handleCancel = () => {
     setShowModal(false); // Close the modal
   };
@@ -68,23 +81,28 @@ const Modal = () => {
       {showModal && (
         <div style={modalStyle}>
           <div style={contentStyle}>
-            <button style={closeButtonStyle} onClick={handleCancel}>x</button>
+            {/* <button style={closeButtonStyle} onClick={handleCancel}>x</button> */}
             <h2>Albums</h2>
             <div className="button-container">
               <button style={buttonStyle} onClick={() => handleRedirect('')}>
-                Shorts CNC Day3
+                Album 1 - Shorts CNC [NA]
               </button>
               <button style={buttonStyle} onClick={() => handleRedirect('')}>
-                LAB PROMO
+                Album 2 - LAB PROMO [NA]
               </button>
               <button style={buttonStyle} onClick={() => handleRedirect('')}>
-                Cutterhead manufacturing
+                Album 3 - Cutterhead manufacturing [NA]
               </button>
               <button style={buttonStyle} onClick={() => handleRedirect('https://flic.kr/s/aHBqjBeTBf')}>
-                Bitac 19-2-24 // DONE
+                Album 4 - Team Working At Bitac 1 
               </button>
-              <button style={buttonStyle} onClick={() => handleRedirect()}>
-                Bitac 18-2-24 
+              <button style={buttonStyle} onClick={() => handleRedirect('')}>
+                Album 5 - Team Working At Bitac 2 [NA]
+              </button>
+
+
+              <button style={buttonStyleRed} onClick={handleCancel}>
+                CANCEL
               </button>
             </div>
           </div>
