@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Navbar } from "react-bootstrap";
 import logos from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
+import Modal from "../modal/Modal";
 import "./BootstrapNavbar.css";
 
 const BootstrapNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [showModal, setShowModal] = useState(false); // State for controlling modal visibility
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +25,12 @@ const BootstrapNavbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Function to toggle modal visibility
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <>
       <nav
@@ -141,6 +149,22 @@ const BootstrapNavbar = () => {
                     </Link>
                   </li>
 
+                  {/* Gallery link */}
+                  <li className="nav-item mt-2 mt-xl-0">
+                    <Link
+                      className="nav-link text-white hover-line"
+                      to="/"
+                      onClick={toggleModal} // Click handler to toggle modal visibility
+                    >
+                      <div
+                        data-bs-dismiss="offcanvas"
+                        data-bs-target="#sidebarMenu"
+                      >
+                        Gallery
+                      </div>
+                    </Link>
+                  </li>
+
                   <li class="nav-item mt-2 mt-xl-0">
                     <Link
                       class="nav-link text-white hover-line"
@@ -185,6 +209,8 @@ const BootstrapNavbar = () => {
           </ul>
         </div>
       </nav>
+      {/* Conditionally render the modal based on state */}
+      {showModal && <Modal onClose={toggleModal} />}
     </>
   );
 };
