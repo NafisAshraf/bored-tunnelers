@@ -153,8 +153,8 @@ const BootstrapNavbar = () => {
                   <li className="nav-item mt-2 mt-xl-0">
                     <Link
                       className="nav-link text-white hover-line"
-                      to="/"
-                      onClick={toggleModal} // Click handler to toggle modal visibility
+                      
+                      onClick={toggleModal} 
                     >
                       <div
                         data-bs-dismiss="offcanvas"
