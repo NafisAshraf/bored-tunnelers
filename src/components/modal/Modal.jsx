@@ -55,19 +55,19 @@ const Modal = () => {
     marginBottom: "10px", // Remove default margin
   };
 
+
   const buttonStyleRed = {
+    backgroundColor: 'red',
+    color: 'white',
+    border: 'none',
+    padding: '3px 5px',
+    borderRadius: '20px',
+    cursor: 'pointer',
+    width: '40%',
+    height: '3em', // Make buttons take full width
+    marginTop: '30px', // Remove default margin
+  };
 
-    backgroundColor: "red",
-    color: "white",
-    border: "none",
-    padding: "3px 5px",
-    borderRadius: "20px",
-    cursor: "pointer",
-    width: "40%",
-    height: "2em", // Make buttons take full width
-    marginTop: "30px", // Remove default margin
-
-  }
 
   const handleCancel = () => {
     setShowModal(false); // Close the modal
@@ -86,6 +86,7 @@ const Modal = () => {
             <h2>Albums</h2>
             <div className="button-container">
               <button style={buttonStyle} onClick={() => handleRedirect('')}>
+
                 Album 1 - CNC Day3 [Not Available Yet]
               </button>
               <button style={buttonStyle} onClick={() => handleRedirect('')}>
@@ -106,6 +107,7 @@ const Modal = () => {
 
               <button style={buttonStyle} onClick={() => handleRedirect("https://flic.kr/s/aHBqjBga6i")}>
                 Album 6 - BITAC Team Photoshoot
+
               </button>
 
 
