@@ -104,6 +104,11 @@ const Modal = () => {
                 Album 5 - Team At Work Bitac [Not Available Yet]
               </button>
 
+              <button style={buttonStyle} onClick={() => handleRedirect("https://flic.kr/s/aHBqjBga6i")}>
+                Album 6 - BITAC Team Photoshoot
+              </button>
+
+
               <button
                 style={buttonStyleRed}
                 onClick={handleCancel}
