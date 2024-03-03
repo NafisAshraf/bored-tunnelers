@@ -9,7 +9,7 @@ import "./styles/global.css";
 import TeamPage from "./pages/team/TeamPage";
 import Footer from "./components/footer/Footer";
 import Homepage from "./pages/homepage/Homepage";
-import testPage from "./pages/testPage";
+import TestPage from "./pages/testPage/TestPage";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Timeline from "./components/timeline/Timeline";
@@ -38,7 +38,7 @@ function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/featuredPage" element={<FeaturedPage />} />
         <Route path="/sponsorship" element={<SponsorshipPage />} />
-        <Route path="/test" element={<testPage />} />
+        <Route path="/test" element={<TestPage />} />
 
         {/* <Route
           path="/*"
