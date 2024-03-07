@@ -1,6 +1,7 @@
 import React from 'react'
 import Waterflow from '../../components/waterflow/Waterflow'
-import WebRTCComponent from '../../components/WebRTCComponent'
+import WebRTCStreamer from '../../components/WebRTCStreamer';
+import WebRTCViewer from '../../components/WebRTCViewer';
 
 const TestPage = () => {
     return (
@@ -15,7 +16,13 @@ const TestPage = () => {
         </h1>
 
         <h1 style={{ textAlign: 'center', marginTop: '100px' }}>
-            <WebRTCComponent />
+        <div>
+      {/* Streamer component */}
+      <WebRTCStreamer />
+
+      {/* Viewer component */}
+      <WebRTCViewer />
+    </div>
         </h1>
         
         </React.Fragment>
