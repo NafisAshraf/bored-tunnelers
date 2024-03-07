@@ -1,34 +1,24 @@
-const express = require('express');
 const http = require('http');
+const express = require('express');
 const { Server } = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
-app.get('/', (req, res) => {
-  res.send('Webcam Streaming Server is running');
-});
+io.on('connection', socket => {
+  console.log('New connection');
 
-io.on('connection', (socket) => {
-  console.log('A user connected');
-
-  socket.on('offer', (data) => {
-    // Broadcast the offer to all connected clients
-    socket.broadcast.emit('offer', data);
-  });
-
-  socket.on('answer', (data) => {
-    // Broadcast the answer to all connected clients
-    socket.broadcast.emit('answer', data);
+  socket.on('streamer-signal', data => {
+    // Broadcast the signaling data to all connected viewers
+    io.emit('viewer-signal', data);
   });
 
   socket.on('disconnect', () => {
-    console.log('User disconnected');
+    console.log('Connection closed');
   });
 });
 
-const PORT = process.env.PORT || 8000;
-server.listen(PORT, () => {
-  console.log(`Webcam Streaming Server is running on port ${PORT}`);
+server.listen(8080, () => {
+  console.log('Signaling server listening on port 8080');
 });
