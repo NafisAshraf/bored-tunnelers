@@ -22,15 +22,22 @@ import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ScrollToTop from "./pages/ScrollToTop";
 import TeamLoading from "./pages/teamLoading/TeamLoading";
+import SensorPage from "./pages/sensorPage/SensorPage";
+import CylinderPage from "./pages/cylinderPage/CylinderPage";
 
 function App() {
+
+  const xRotation = Math.PI / 4; // 45 degrees in radians
+  const yRotation = Math.PI / 4; // 45 degrees in radians
+  const zRotation = 0; // No rotation around the z-axis
+  
   return (
     <React.Fragment>
       <ScrollToTop />
       <BootstrapNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/team" element={< TeamLoading /*TeamPage*//>} /> // Change to TeamPage when ready
+        <Route path="/team" element={<  TeamPage/>} /> 
         <Route path="/our-story" element={<Timeline />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/technology" element={<TechnologyPage />} />
@@ -39,6 +46,8 @@ function App() {
         <Route path="/featuredPage" element={<FeaturedPage />} />
         <Route path="/sponsorship" element={<SponsorshipPage />} />
         <Route path="/test" element={<TestPage />} />
+        <Route path="/sensor" element={<SensorPage />} />
+        <Route path="/cylinder" element={<CylinderPage />} />
 
         {/* <Route
           path="/*"
