@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+// import Button from "react-bootstrap/Button";
+// import Card from "react-bootstrap/Card";
 
 import "./App.css";
 import "./styles/global.css";
@@ -11,7 +11,7 @@ import Footer from "./components/footer/Footer";
 import Homepage from "./pages/homepage/Homepage";
 import TestPage from "./pages/testPage/TestPage";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/header/Header";
+// import Header from "./components/header/Header";
 import Timeline from "./components/timeline/Timeline";
 import BootstrapNavbar from "./components/header/BootstrapNavbar";
 import Contactpage from "./pages/contactpage/Contactpage";
@@ -21,15 +21,15 @@ import FeaturedPage from "./pages/featuredPage/FeaturedPage";
 import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ScrollToTop from "./pages/ScrollToTop";
-import TeamLoading from "./pages/teamLoading/TeamLoading";
+// import TeamLoading from "./pages/teamLoading/TeamLoading";
 import SensorPage from "./pages/sensorPage/SensorPage";
 import CylinderPage from "./pages/cylinderPage/CylinderPage";
 
 function App() {
 
-  const xRotation = Math.PI / 4; // 45 degrees in radians
-  const yRotation = Math.PI / 4; // 45 degrees in radians
-  const zRotation = 0; // No rotation around the z-axis
+  // const xRotation = Math.PI / 4; // 45 degrees in radians
+  // const yRotation = Math.PI / 4; // 45 degrees in radians
+  // const zRotation = 0; // No rotation around the z-axis
   
   return (
     <React.Fragment>
