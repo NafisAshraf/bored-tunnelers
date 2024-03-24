@@ -104,11 +104,7 @@
           "university": "IUB",
           "image": "images/team/Tanfiya_Khan_Disha.jpg"
         },
-        {
-          "name": "Talha Zubair",
-          "university": "NDC",
-          "image": "images/team/Talha_Zubair2.jpg"
-        },
+        
         {
           "name": "Fatima Ashraf",
           "university": "MIST",
@@ -126,7 +122,7 @@
           "role": "Team Lead"
         },
         {
-          "name": "Abu Talha",
+          "name": "Md Abu Talha",
           "image": "images/team/Abu_Talha.jpg",
           "university": "UTM",
           "role": ""
