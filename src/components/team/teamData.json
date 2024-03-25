@@ -1,15 +1,6 @@
 {
   "teams": [
     {
-      "name": "Advisors",
-      "members": [
-        {
-          "name": "Salman Promon Khan",
-          "image": "images/team/Salman_Promon_Khan.jpg"
-        }
-      ]
-    },
-    {
       "name": "Project Leads",
       "members": [
         {
@@ -104,7 +95,7 @@
           "university": "IUB",
           "image": "images/team/Tanfiya_Khan_Disha.jpg"
         },
-        
+
         {
           "name": "Fatima Ashraf",
           "university": "MIST",
@@ -136,7 +127,7 @@
           "name": "Imran Khan",
           "university": "BUET",
           "image": "images/team/Md_Imran_Khan2.jpg",
-          "role":"Team Lead"
+          "role": "Team Lead"
         }
       ]
     },
@@ -155,13 +146,13 @@
         }
       ]
     },
+
     {
-      "name": "Logistics Team",
+      "name": "Advisors",
       "members": [
         {
-          "name": "Sazu Islam",
-          "image": "images/team/Sazu_Islam.jpg",
-          "university": ""
+          "name": "Salman Promon Khan",
+          "image": "images/team/Salman_Promon_Khan.jpg"
         }
       ]
     }
