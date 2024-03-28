@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { Navbar } from "react-bootstrap";
-import logos from "../../assets/images/logo.png";
-import { Link } from "react-router-dom";
-import Modal from "../modal/Modal";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
+import logos from '../../assets/images/logo.png';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 import "./BootstrapNavbar.css";
 
 const BootstrapNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [showModal, setShowModal] = useState(false); // State for controlling modal visibility
+  const [anchorEl, setAnchorEl] = useState(null); // Used for MUI Menu
+  const open = Boolean(anchorEl);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,174 +20,104 @@ const BootstrapNavbar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Function to toggle modal visibility
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
   };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const navigateToLink = (url) => {
+    window.location.href = url;
+  };
+
 
   return (
     <>
-      <nav
-        className={`navigation-bar navbar flex-xl-nowrap py-2 ${
-          scrolled ? "scrolled" : ""
-        }`}
-        data-bs-theme="dark"
-      >
+      <nav className={`navigation-bar navbar flex-xl-nowrap py-2 ${scrolled ? 'scrolled' : ''}`} data-bs-theme="dark">
         <div className="container-xl container-fluid">
           <Link to="/" className="text-decoration-none">
             <Navbar.Brand className="d-flex align-items-center gap-2">
-              <img
-                className="myLogo"
-                src={logos}
-                alt="logo"
-                width="60"
-                height="60"
-              />
+              <img className="myLogo" src={logos} alt="logo" width="60" height="60" />
               <p className="logo-header">Bored Tunnelers</p>
             </Navbar.Brand>
           </Link>
 
-          <div class="sidebar ">
-            <div
-              class="offcanvas-xl offcanvas-end"
-              tabindex="-1"
-              id="sidebarMenu"
-            >
-              <div class="offcanvas-header">
-                {/* Off Canvas Heading */}
+          <div className="sidebar">
+            <div className="offcanvas-xl offcanvas-end" tabIndex="-1" id="sidebarMenu">
+              <div className="offcanvas-header">
                 <Navbar.Brand className="ms-3" href="/">
                   <span className="logo-header">Bored Tunnelers</span>
                 </Navbar.Brand>
-                {/* Off Canvas Close Button */}
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  data-bs-target="#sidebarMenu"
-                ></button>
+                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu"></button>
               </div>
 
-              <div class="offcanvas-body py-2 d-flex mx-2 overflow-y-auto">
-                <ul class="nav flex-column flex-xl-row align-items-xl-center">
-                  <li class="nav-item ">
-                    <Link class="nav-link text-white hover-line" to="/">
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        Home
-                      </div>
+              <div className="offcanvas-body py-2 d-flex mx-2 overflow-y-auto">
+                <ul className="nav flex-column flex-xl-row align-items-xl-center">
+                  {/* Home Link */}
+                  <li className="nav-item">
+                    <Link className="nav-link text-white hover-line" to="/">
+                      Home
                     </Link>
                   </li>
 
-                  {/* <li class="nav-item mt-2 mt-xl-0 ">
-                    <Link
-                      class="nav-link text-white hover-line"
-                      to="/our-story"
-                    >
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        Our Story
-                      </div>
-                    </Link>
-                  </li> */}
-                  <li class="nav-item mt-2 mt-xl-0 ">
-                    <Link class="nav-link text-white hover-line" to="/about">
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        About Us
-                      </div>
-                    </Link>
-                  </li>
-
-                  <li class="nav-item mt-2 mt-xl-0">
-                    <Link class="nav-link text-white hover-line" to="/team">
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        Team
-                      </div>
-                    </Link>
-                  </li>
-
-                  <li class="nav-item mt-2 mt-xl-0">
-                    <Link
-                      class="nav-link text-white hover-line"
-                      to="/featuredPage"
-                    >
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        Featured
-                      </div>
-                    </Link>
-                  </li>
-
-                  <li class="nav-item mt-2 mt-xl-0">
-                    <Link
-                      class="nav-link text-white hover-line"
-                      to="/technology"
-                    >
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        Technology
-                      </div>
-                    </Link>
-                  </li>
-
-                  {/* Gallery link */}
+                  {/* Other navigation links like About, Team, etc. */}
                   <li className="nav-item mt-2 mt-xl-0">
-                    <Link
-                      className="nav-link text-white hover-line"
+                    <Link className="nav-link text-white hover-line" to="/about">
+                      About Us
+                    </Link>
+                  </li>
+                  <li className="nav-item mt-2 mt-xl-0">
+                    <Link className="nav-link text-white hover-line" to="/team">
+                      Team
+                    </Link>
+                  </li>
+                  <li className="nav-item mt-2 mt-xl-0">
+                    <Link className="nav-link text-white hover-line" to="/featuredPage">
+                      Featured
+                    </Link>
+                  </li>
+                  <li className="nav-item mt-2 mt-xl-0">
+                    <Link className="nav-link text-white hover-line" to="/technology">
+                      Technology
+                    </Link>
+                  </li>
+
+                  {/* Gallery MUI Dropdown */}
+                  <li className="nav-item mt-2 mt-xl-0">
+                    <div className="nav-link text-white hover-line" onClick={handleMenuClick}>
+                      Gallery
+                    </div>
+                    <Menu
+                      id="gallery-menu"
+                      anchorEl={anchorEl}
+                      keepMounted
+                      open={open}
+                      onClose={handleMenuClose}
+                    >
+                      <MenuItem onClick={() => navigateToLink("https://flic.kr/s/aHBqjBeTBf")}>Team At Work - Bitac</MenuItem>
+                      <MenuItem onClick={() => navigateToLink("https://flic.kr/s/aHBqjBga6i")}>BITAC Team Photoshoot</MenuItem>
                       
-                      onClick={toggleModal} 
-                    >
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        Gallery
-                      </div>
-                    </Link>
+                    </Menu>
                   </li>
 
-                  <li class="nav-item mt-2 mt-xl-0">
-                    <Link
-                      class="nav-link text-white hover-line"
-                      to="/sponsorship"
-                    >
-                      <div
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
-                        Sponsorship
-                      </div>
+                  {/* Sponsorship and Contact Us */}
+                  <li className="nav-item mt-2 mt-xl-0">
+                    <Link className="nav-link text-white hover-line" to="/sponsorship">
+                      Sponsorship
                     </Link>
                   </li>
-
-                  <li class="nav-item mt-4 mt-xl-0">
-                    <Link class="nav-link ms-2 p-0 text-white" to="/contact">
-                      <button
-                        className="btn btn-primary rounded rounded-3"
-                        data-bs-dismiss="offcanvas"
-                        data-bs-target="#sidebarMenu"
-                      >
+                  <li className="nav-item mt-4 mt-xl-0">
+                    <Link className="nav-link ms-2 p-0 text-white" to="/contact">
+                      <button className="btn btn-primary rounded rounded-3">
                         Contact Us
                       </button>
                     </Link>
@@ -194,23 +126,8 @@ const BootstrapNavbar = () => {
               </div>
             </div>
           </div>
-
-          <ul class="navbar-nav flex-row d-xl-none">
-            <li class="nav-item text-nowrap">
-              <button
-                class="nav-link px-3 text-white bg-dark border-0"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#sidebarMenu"
-              >
-                <i class="bi bi-list fs-4"></i>
-              </button>
-            </li>
-          </ul>
         </div>
       </nav>
-      {/* Conditionally render the modal based on state */}
-      {showModal && <Modal onClose={toggleModal} />}
     </>
   );
 };
