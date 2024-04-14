@@ -170,7 +170,7 @@ const BootstrapNavbar = () => {
                   <li className="nav-item mt-4 mt-xl-0">
                     <Link
                       className="nav-link ms-2 p-0 text-white"
-                      to="/contact"
+                      to="https://form.jotform.com/241035103871446"
                     >
                       <button className="btn btn-primary rounded rounded-3">
                         Join Us
