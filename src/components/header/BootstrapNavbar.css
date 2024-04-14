@@ -12,6 +12,13 @@
 }
 
 /* Tab Width */
+.logo-header {
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  top: 0.3em;
+}
+
 @media (min-width: 1200px) {
   .logo-header {
     font-size: 1.7rem;

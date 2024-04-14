@@ -72,10 +72,10 @@ const SponsorshipPage = () => {
         <hr className="pb-5" />
       </div>
 
-      <div className="container-fluid text-center bg-white">
+      {/* <div className="container-fluid text-center bg-white">
         <h2 className="pb-4">You Can Support Us Through GoFundMe As Well</h2>
         <GoFundMeWidget />
-      </div>
+      </div> */}
     </>
   );
 };
