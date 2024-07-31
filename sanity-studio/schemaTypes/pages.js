@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'footer',
-  title: 'Footer',
+  name: 'pages',
+  title: 'Pages',
   type: 'document',
   fields: [
     defineField({
@@ -14,7 +14,7 @@ export default defineType({
       name: 'items',
       title: 'Items',
       type: 'array',
-      of: [{type: 'footerItem'}],
+      of: [{type: 'textBlock'}, {type: 'backgroundVideo'}, {type: 'footerItem'}],
     }),
   ],
 })
