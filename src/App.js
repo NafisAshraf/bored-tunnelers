@@ -25,6 +25,8 @@ import ScrollToTop from "./pages/ScrollToTop";
 // import SensorPage from "./pages/sensorPage/SensorPage";
 import CylinderPage from "./pages/cylinderPage/CylinderPage";
 
+import Footer2 from "./component/Footer";
+
 function App() {
   // const xRotation = Math.PI / 4; // 45 degrees in radians
   // const yRotation = Math.PI / 4; // 45 degrees in radians
@@ -35,6 +37,7 @@ function App() {
       <ScrollToTop />
       <BootstrapNavbar />
       <Routes>
+        <Route path="/footer" element={<Footer2 />} />
         <Route path="/" element={<Homepage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/our-story" element={<Timeline />} />
