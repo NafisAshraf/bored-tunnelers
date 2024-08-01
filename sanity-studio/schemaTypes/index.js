@@ -12,8 +12,12 @@ import backgroundVideoWithTextAndButton from './backgroundVideoWithTextAndButton
 import backgroundVideo from './backgroundVideo'
 import timeline from './timeline'
 import timelineItem from './timelineItem'
+
+import imageSection from './imageSection'
+
 import imageWithPosition from './imageWithPosition'
 import textImageSection from './textImageSection'
+
 
 
 export const schemaTypes = [
@@ -30,7 +34,11 @@ export const schemaTypes = [
 
   timeline,
   timelineItem,
+
+  imageSection,
+
   imageWithPosition,
   textImageSection,
+
 
 ]

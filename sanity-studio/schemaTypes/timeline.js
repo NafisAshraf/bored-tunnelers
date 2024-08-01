@@ -1,5 +1,5 @@
-import {defineField, defineType} from 'sanity'
 
+import { defineField, defineType } from 'sanity';
 export default defineType({
   name: 'timeline',
   title: 'Timeline',
@@ -13,3 +13,4 @@ export default defineType({
     }),
   ],
 })
+
