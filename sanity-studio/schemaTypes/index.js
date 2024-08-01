@@ -9,6 +9,7 @@ import pages from './pages'
 import backgroundVideo from './backgroundVideo'
 import timeline from './timeline'
 import timelineItem from './timelineItem'
+import imageSection from './imageSection'
 
 export const schemaTypes = [
   //   post,
@@ -22,4 +23,5 @@ export const schemaTypes = [
   backgroundVideo,
   timeline,
   timelineItem,
+  imageSection,
 ]
