@@ -6,10 +6,19 @@ import footerItem from './footerItem'
 import other from './other'
 import textBlock from './textBlock'
 import pages from './pages'
+
+import backgroundVideoWithTextAndButton from './backgroundVideoWithTextAndButton'
+
 import backgroundVideo from './backgroundVideo'
 import timeline from './timeline'
 import timelineItem from './timelineItem'
+
 import imageSection from './imageSection'
+
+import imageWithPosition from './imageWithPosition'
+import textImageSection from './textImageSection'
+
+
 
 export const schemaTypes = [
   //   post,
@@ -20,8 +29,16 @@ export const schemaTypes = [
   other,
   textBlock,
   pages,
-  backgroundVideo,
+
+  backgroundVideoWithTextAndButton,
+
   timeline,
   timelineItem,
+
   imageSection,
+
+  imageWithPosition,
+  textImageSection,
+
+
 ]
