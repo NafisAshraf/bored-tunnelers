@@ -19,6 +19,7 @@ export default defineType({
         {type: 'backgroundVideo'},
         {type: 'footerItem'},
         {type: 'timeline'},
+        {type: 'textImageSection'},
       ],
     }),
   ],
