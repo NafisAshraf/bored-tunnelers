@@ -7,15 +7,19 @@ import other from './other'
 import textBlock from './textBlock'
 import pages from './pages'
 import backgroundVideo from './backgroundVideo'
+import timeline from './timeline'
+import timelineItem from './timelineItem'
 
 export const schemaTypes = [
-  post,
+  //   post,
   member,
-  category,
+  //   category,
   blockContent,
   footerItem,
   other,
   textBlock,
   pages,
   backgroundVideo,
+  timeline,
+  timelineItem,
 ]

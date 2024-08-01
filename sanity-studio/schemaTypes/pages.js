@@ -14,7 +14,12 @@ export default defineType({
       name: 'items',
       title: 'Items',
       type: 'array',
-      of: [{type: 'textBlock'}, {type: 'backgroundVideo'}, {type: 'footerItem'}],
+      of: [
+        {type: 'textBlock'},
+        {type: 'backgroundVideo'},
+        {type: 'footerItem'},
+        {type: 'timeline'},
+      ],
     }),
   ],
 })
