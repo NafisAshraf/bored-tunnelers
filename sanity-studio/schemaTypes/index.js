@@ -6,7 +6,7 @@ import footerItem from './footerItem'
 import other from './other'
 import textBlock from './textBlock'
 import pages from './pages'
-import backgroundVideo from './backgroundVideo'
+import backgroundVideoWithTextAndButton from './backgroundVideoWithTextAndButton'
 
 export const schemaTypes = [
   post,
@@ -17,5 +17,5 @@ export const schemaTypes = [
   other,
   textBlock,
   pages,
-  backgroundVideo,
+  backgroundVideoWithTextAndButton,
 ]
