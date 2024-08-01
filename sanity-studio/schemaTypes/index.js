@@ -9,6 +9,8 @@ import pages from './pages'
 import backgroundVideo from './backgroundVideo'
 import timeline from './timeline'
 import timelineItem from './timelineItem'
+import imageWithPosition from './imageWithPosition'
+import textImageSection from './textImageSection'
 
 export const schemaTypes = [
   //   post,
@@ -22,4 +24,6 @@ export const schemaTypes = [
   backgroundVideo,
   timeline,
   timelineItem,
+  imageWithPosition,
+  textImageSection,
 ]
