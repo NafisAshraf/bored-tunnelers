@@ -21,6 +21,7 @@ import FeaturedPage from "./pages/featuredPage/FeaturedPage";
 import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ScrollToTop from "./pages/ScrollToTop";
+import MediaPage from "./pages/mediaPage/MediaPage";
 // import TeamLoading from "./pages/teamLoading/TeamLoading";
 // import SensorPage from "./pages/sensorPage/SensorPage";
 import CylinderPage from "./pages/cylinderPage/CylinderPage";
@@ -47,6 +48,7 @@ function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/featuredPage" element={<FeaturedPage />} />
         <Route path="/sponsorship" element={<SponsorshipPage />} />
+        <Route path="/media" element={<MediaPage />} />  
         <Route path="/test" element={<TestPage />} />
         {/* <Route path="/sensor" element={<SensorPage />} /> */}
         <Route path="/cylinder" element={<CylinderPage />} />
