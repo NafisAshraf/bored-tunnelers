@@ -8,8 +8,8 @@ import "./BootstrapNavbar.css";
 
 const BootstrapNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [anchorEl, setAnchorEl] = useState(null); // Used for MUI Menu
-  const open = Boolean(anchorEl);
+  // const [anchorEl, setAnchorEl] = useState(null); // Used for MUI Menu
+  // const open = Boolean(anchorEl);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,17 +27,13 @@ const BootstrapNavbar = () => {
     };
   }, []);
 
-  const handleMenuClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+  // const handleMenuClick = (event) => {
+  //   setAnchorEl(event.currentTarget);
+  // };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
-  const navigateToLink = (url) => {
-    window.location.href = url;
-  };
+  // const handleMenuClose = () => {
+  //   setAnchorEl(null);
+  // };
 
   return (
     <>
@@ -120,7 +116,7 @@ const BootstrapNavbar = () => {
                   </li>
 
                   {/* Gallery MUI Dropdown */}
-                  <li className="nav-item mt-2 mt-xl-0">
+                  {/* <li className="nav-item mt-2 mt-xl-0">
                     <div
                       className="nav-link text-white hover-line"
                       onClick={handleMenuClick}
@@ -149,7 +145,7 @@ const BootstrapNavbar = () => {
                         BITAC Team Photoshoot
                       </MenuItem>
                     </Menu>
-                  </li>
+                  </li> */}
 
                   {/* Sponsorship and Contact Us */}
                   <li className="nav-item mt-2 mt-xl-0">
@@ -160,14 +156,17 @@ const BootstrapNavbar = () => {
                       Sponsorship
                     </Link>
                   </li>
-                  {/* <li className="nav-item mt-4 mt-xl-0">
-                    <Link className="nav-link ms-2 p-0 text-white" to="/contact">
+                  <li className="nav-item mt-4 mt-xl-0">
+                    <Link
+                      className="nav-link ms-2 p-0 text-white"
+                      to="/contact"
+                    >
                       <button className="btn btn-primary rounded rounded-3">
                         Contact Us
                       </button>
                     </Link>
-                  </li> */}
-                  <li className="nav-item mt-4 mt-xl-0">
+                  </li>
+                  {/* <li className="nav-item mt-4 mt-xl-0">
                     <Link
                       className="nav-link ms-2 p-0 text-white"
                       to="https://form.jotform.com/241035103871446"
@@ -176,11 +175,23 @@ const BootstrapNavbar = () => {
                         Join Us
                       </button>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
           </div>
+          <ul class="navbar-nav flex-row d-xl-none">
+            <li class="nav-item text-nowrap">
+              <button
+                class="nav-link px-3 text-white  border-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#sidebarMenu"
+              >
+                <i class="bi bi-list fs-4"></i>
+              </button>
+            </li>
+          </ul>
         </div>
       </nav>
     </>

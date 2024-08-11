@@ -1,28 +1,28 @@
-import { defineField, defineType } from 'sanity';
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'imageSection',
   title: 'Image Section',
-  type: 'document',
+  type: 'object',
   fields: [
-    defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    }),
-    defineField({
-      name: 'description',
-      title: 'Description',
-      type: 'text',
-    }),
+    // defineField({
+    //   name: 'title',
+    //   title: 'Title',
+    //   type: 'string',
+    // }),
+    // defineField({
+    //   name: 'description',
+    //   title: 'Description',
+    //   type: 'text',
+    // }),
     defineField({
       name: 'images',
       title: 'Images',
       type: 'array',
-      of: [{ type: 'image' }],
+      of: [{type: 'image'}],
       options: {
         layout: 'grid',
       },
     }),
   ],
-});
+})

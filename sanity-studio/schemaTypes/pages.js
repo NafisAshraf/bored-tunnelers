@@ -17,16 +17,18 @@ export default defineType({
 
       of: [
         {type: 'textBlock'},
-        {type: 'backgroundVideoWithTextAndButton'},
+        {type: 'backgroundTextSection'},
+        {type: 'backgroundVideoSection'},
         {type: 'footerItem'},
         {type: 'timeline'},
 
-        {type:'imageSection'},
+        {type: 'imageSection'},
 
         {type: 'textImageSection'},
 
+        {type: 'gap'},
+        {type: 'horizontalLine'},
       ],
-
     }),
   ],
 })

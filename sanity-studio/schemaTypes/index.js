@@ -6,39 +6,40 @@ import footerItem from './footerItem'
 import other from './other'
 import textBlock from './textBlock'
 import pages from './pages'
+import backgroundTextSection from './backgroundTextSection'
+import backgroundVideoSection from './backgroundVideoSection'
 
-import backgroundVideoWithTextAndButton from './backgroundVideoWithTextAndButton'
-
-import backgroundVideo from './backgroundVideo'
+// import backgroundVideo from './backgroundVideo'
 import timeline from './timeline'
 import timelineItem from './timelineItem'
 
 import imageSection from './imageSection'
 
-import imageWithPosition from './imageWithPosition'
+// import imageWithPosition from './imageWithPosition'
 import textImageSection from './textImageSection'
-
-
+import gap from './gap'
+import horizontalLine from './horizontalLine'
 
 export const schemaTypes = [
-  //   post,
+  post,
   member,
-  //   category,
+  category,
   blockContent,
   footerItem,
   other,
   textBlock,
   pages,
 
-  backgroundVideoWithTextAndButton,
+  backgroundTextSection,
+  backgroundVideoSection,
 
   timeline,
   timelineItem,
 
   imageSection,
 
-  imageWithPosition,
+  // imageWithPosition,
   textImageSection,
-
-
+  gap,
+  horizontalLine,
 ]

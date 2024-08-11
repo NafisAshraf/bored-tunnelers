@@ -1,9 +1,8 @@
-
-import { defineField, defineType } from 'sanity';
+import {defineField, defineType} from 'sanity'
 export default defineType({
   name: 'timeline',
   title: 'Timeline',
-  type: 'document',
+  type: 'object',
   fields: [
     defineField({
       name: 'items',
@@ -13,4 +12,3 @@ export default defineType({
     }),
   ],
 })
-
