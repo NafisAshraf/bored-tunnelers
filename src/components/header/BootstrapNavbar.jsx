@@ -148,14 +148,14 @@ const BootstrapNavbar = () => {
                   </li> */}
 
                   {/* Media */}
-                  <li className="nav-item mt-2 mt-xl-0">
+                  {/* <li className="nav-item mt-2 mt-xl-0">
                     <Link
                       className="nav-link text-white hover-line"
                       to="/media"
                     >
                       Media
                     </Link>
-                  </li>
+                  </li> */}
 
                   {/* Sponsorship and Contact Us */}
                   <li className="nav-item mt-2 mt-xl-0">
