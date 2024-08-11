@@ -8,7 +8,7 @@ import "./styles/global.css";
 // Custom Components
 import TeamPage from "./pages/team/TeamPage";
 import Footer from "./components/footer/Footer";
-import Homepage from "./pages/homepage/Homepage";
+import Homepage from "./pages/Homepage";
 import TestPage from "./pages/testPage/TestPage";
 import { Routes, Route } from "react-router-dom";
 // import Header from "./components/header/Header";
@@ -45,7 +45,7 @@ function App() {
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/featuredPage" element={<FeaturedPage />} />
         <Route path="/sponsorship" element={<SponsorshipPage />} />
-        <Route path="/media" element={<MediaPage />} />  
+        <Route path="/media" element={<MediaPage />} />
         <Route path="/test" element={<TestPage />} />
         {/* <Route path="/sensor" element={<SensorPage />} /> */}
         <Route path="/cylinder" element={<CylinderPage />} />

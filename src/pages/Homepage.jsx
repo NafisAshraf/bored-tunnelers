@@ -1,38 +1,40 @@
 import React, { useEffect, useState } from "react";
-import "./homepage.css";
-import ElementOne from "../../components/HomePageElements/ElementOne/ElementOne";
-import ElementTwo from "../../components/HomePageElements/ElementTwo/ElementTwo";
-import ElementThree from "../../components/HomePageElements/ElementThree/ElementThree";
-import TechnicalSpecifications from "../../components/HomePageElements/TechnicalSpecifications/TechnicalSpecifications";
+// import "./homepage.css";
+import ElementOne from "../components/HomePageElements/ElementOne/ElementOne";
+import ElementTwo from "../components/HomePageElements/ElementTwo/ElementTwo";
+import ElementThree from "../components/HomePageElements/ElementThree/ElementThree";
+import TechnicalSpecifications from "../components/HomePageElements/TechnicalSpecifications/TechnicalSpecifications";
 
 import { Link } from "react-router-dom";
-import { sanityFetch } from "../../sanityClient";
-import BackgroundTextSection from "../../components/BackgroundTextSection";
-import BackgroundVideoSection from "../../components/BackgroundVideoSection";
-import TextImageSection from "../../components/TextImageSection";
-import ImageSection from "../../components/ImageSection";
+import { sanityFetch } from "../sanityClient";
+import BackgroundTextSection from "../components/BackgroundTextSection";
+import BackgroundVideoSection from "../components/BackgroundVideoSection";
+import TextImageSection from "../components/TextImageSection";
+import ImageSection from "../components/ImageSection";
+
+import Page from "./Page";
 
 const Homepage = () => {
-  const [data, setData] = useState(null);
-  const [addGap, setAddGap] = useState(false);
+  // const [data, setData] = useState(null);
+  // const [addGap, setAddGap] = useState(false);
 
-  useEffect(() => {
-    sanityFetch(`*[_type == "pages" && title == "Homepage"]`).then((data) => {
-      setData(data[0].items);
+  // useEffect(() => {
+  //   sanityFetch(`*[_type == "pages" && title == "Homepage"]`).then((data) => {
+  //     setData(data[0].items);
 
-      // Set the addGap state based on whether there's a backgroundVideoSection
-      if (
-        data[0].items.some((item) => item._type === "backgroundVideoSection")
-      ) {
-        setAddGap(true);
-      }
-    });
-  }, []);
+  //     // Set the addGap state based on whether there's a backgroundVideoSection
+  //     if (
+  //       data[0].items.some((item) => item._type === "backgroundVideoSection")
+  //     ) {
+  //       setAddGap(true);
+  //     }
+  //   });
+  // }, []);
 
   return (
     <>
-      <div className="">
-        {data &&
+      <Page pageTitle="Homepage" />
+      {/* {data &&
           data.map((item, index) => {
             if (item._type === "backgroundVideoSection") {
               return (
@@ -86,13 +88,7 @@ const Homepage = () => {
             } else {
               return null;
             }
-          })}
-
-        <ElementOne />
-        <ElementThree />
-        <ElementTwo />
-        <TechnicalSpecifications />
-      </div>
+          })} */}
     </>
   );
 };
