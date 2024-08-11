@@ -1,5 +1,6 @@
 # sanity studio
 /sanity-studio/
+*.env
 
 
 # Prerequisites
