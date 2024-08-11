@@ -5,9 +5,6 @@ import imageUrlBuilder from "@sanity/image-url";
 const projectId = process.env.REACT_APP_SANITY_PROJECT_ID;
 const dataset = process.env.REACT_APP_SANITY_DATASET;
 const apiVersion = process.env.REACT_APP_SANITY_API_VERSION;
-console.log("Project ID:", projectId);
-console.log("Dataset:", dataset);
-console.log("API Version:", apiVersion);
 
 const sanityClient = createClient({
   projectId: projectId, // Your project ID from env

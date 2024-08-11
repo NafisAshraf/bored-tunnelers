@@ -5,6 +5,7 @@ import BackgroundTextSection from "../components/BackgroundTextSection";
 import BackgroundVideoSection from "../components/BackgroundVideoSection";
 import TextImageSection from "../components/TextImageSection";
 import ImageSection from "../components/ImageSection";
+import TimelineSection from "../components/TimelineSection";
 
 import ElementOne from "../components/HomePageElements/ElementOne/ElementOne";
 import ElementTwo from "../components/HomePageElements/ElementTwo/ElementTwo";
@@ -20,7 +21,7 @@ const Page = (props) => {
   useEffect(() => {
     sanityFetch(`*[_type == "pages" && title == "${props.pageTitle}"]`).then(
       (data) => {
-        console.log(data[0].items);
+        // console.log(data[0].items);
         setData(data[0].items);
 
         // Set the addGap state based on whether there's a backgroundVideoSection
@@ -56,9 +57,7 @@ const Page = (props) => {
 
       <div
         className={
-          addGap
-            ? "content bg-white z-1 pt-3"
-            : "below-header bg-white z-1 pt-3"
+          addGap ? "content bg-white z-1 pt-3" : "below-header bg-white z-1 "
         }
       >
         {data &&
@@ -81,6 +80,8 @@ const Page = (props) => {
                   position={item.position}
                 />
               );
+            } else if (item._type === "timeline") {
+              return <TimelineSection key={index} items={item.items} />;
             } else if (item._type === "imageSection") {
               return <ImageSection key={index} images={item.images} />;
             } else if (item._type === "horizontalLine") {

@@ -1,27 +1,25 @@
 import React, { useEffect } from "react";
-import "./Timeline.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "./Timeline.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // import timelineData from "./timelineData.json";
 // import './OurStory.css';
-import { sanityFetch, urlFor } from "../../sanityClient";
+import { sanityFetch, urlFor } from "../sanityClient";
+import "../styles/global.css";
 
-const OurStory = () => {
-  const [data, setData] = React.useState([]);
-  useEffect(() => {
-    sanityFetch(`*[_type == "pages" && title == "Timeline Page"]`).then(
-      (data) => {
-        setData(data[0].items[0].items);
-        console.log(data[0].items[0].items);
-      }
-    );
-  }, []);
-  console.log(urlFor(data[0].images[0]));
+const OurStory = (props) => {
+  const data = props.items;
+  // const [data, setData] = React.useState([]);
+  // useEffect(() => {
+  //   sanityFetch(`*[_type == "pages" && title == "Timeline Page"]`).then(
+  //     (data) => {
+  //       setData(data[0].items[0].items);
+  //       console.log(data[0].items[0].items);
+  //     }
+  //   );
+  // }, []);
+  // console.log(urlFor(data[0].images[0]));
   return (
     <>
-      <h1 className="top d-flex align-items-center justify-content-center text-center text-white bg-black mb-md-0">
-        Journey Timeline
-      </h1>
-
       <div className="container our-story">
         <div className="timeline">
           {data.map((entry, index) => (

@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 // import Button from "react-bootstrap/Button";
 // import Card from "react-bootstrap/Card";
 
@@ -12,7 +13,7 @@ import Homepage from "./pages/Homepage";
 import TestPage from "./pages/testPage/TestPage";
 import { Routes, Route } from "react-router-dom";
 // import Header from "./components/header/Header";
-import Timeline from "./components/timeline/Timeline";
+// import Timeline from "./components/TimelineSection";
 import BootstrapNavbar from "./components/header/BootstrapNavbar";
 import Contactpage from "./pages/contactpage/Contactpage";
 import AdminHome from "./pages/adminPage/adminHome";
@@ -25,6 +26,7 @@ import MediaPage from "./pages/mediaPage/MediaPage";
 // import TeamLoading from "./pages/teamLoading/TeamLoading";
 // import SensorPage from "./pages/sensorPage/SensorPage";
 import CylinderPage from "./pages/cylinderPage/CylinderPage";
+import TimelinePage from "./pages/TimelinePage";
 
 function App() {
   // const xRotation = Math.PI / 4; // 45 degrees in radians
@@ -38,7 +40,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/team" element={<TeamPage />} />
-        <Route path="/our-story" element={<Timeline />} />
+        <Route path="/our-story" element={<TimelinePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/technology" element={<TechnologyPage />} />
         <Route path="/contact" element={<Contactpage />} />

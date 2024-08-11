@@ -4,7 +4,7 @@ import "../styles/global.css";
 import { urlForFile } from "../sanityClient";
 
 const BackgroundVideoSection = (props) => {
-  console.log(urlForFile(props.backgroundVideo));
+  // console.log(urlForFile(props.backgroundVideo));
   return (
     <>
       <div className="fullscreen-video">
