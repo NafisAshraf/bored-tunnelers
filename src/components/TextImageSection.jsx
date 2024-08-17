@@ -3,12 +3,13 @@ import "../styles/global.css";
 import { urlFor } from "../sanityClient";
 
 const TextImageSection = ({ title, text, image, position }) => {
+  console.log(position);
   const isLeft = position === "left";
 
   return (
-    <div className="container">
+    <div className="container py-3">
       <div className="row">
-        <div className={`col-md-6 col-12 ${isLeft ? "" : "order-md-2"}`}>
+        <div className={`col-md-6 col-12 ${isLeft ? "order-md-2" : ""}`}>
           <h1 className="dynamic-heading text-black">{title}</h1>
           <p className="dynamic-text text-black">{text}</p>
         </div>

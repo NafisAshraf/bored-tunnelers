@@ -11,6 +11,9 @@ import ElementOne from "../components/HomePageElements/ElementOne/ElementOne";
 import ElementTwo from "../components/HomePageElements/ElementTwo/ElementTwo";
 import ElementThree from "../components/HomePageElements/ElementThree/ElementThree";
 import TechnicalSpecifications from "../components/HomePageElements/TechnicalSpecifications/TechnicalSpecifications";
+import Gallery from "../components/Gallery";
+import TextBlock from "../components/TextBlock";
+import FeaturedSection from "../components/FeaturedSection";
 
 import "../styles/global.css";
 
@@ -80,25 +83,28 @@ const Page = (props) => {
                   position={item.position}
                 />
               );
+            } else if (item._type === "textBlock") {
+              return (
+                <TextBlock
+                  key={index}
+                  title={item.title}
+                  titleColor={item.titleColor}
+                  text={item.text}
+                  textColor={item.textColor}
+                />
+              );
             } else if (item._type === "timeline") {
               return <TimelineSection key={index} items={item.items} />;
             } else if (item._type === "imageSection") {
               return <ImageSection key={index} images={item.images} />;
+            } else if (item._type === "gallery") {
+              return <Gallery key={index} images={item.images} />;
             } else if (item._type === "horizontalLine") {
               return <hr className="my-5" />;
             } else if (item._type === "gap") {
               return <div className="my-3 py-3" />;
-            } else if (item._type === "backgroundVideoSection") {
-              return (
-                <BackgroundVideoSection
-                  key={index}
-                  title={item.title}
-                  backgroundVideo={item.backgroundVideo}
-                  text={item.text}
-                  button={item.button}
-                  buttonLink={item.buttonLink}
-                />
-              );
+            } else if (item._type === "featuredSection") {
+              return <FeaturedSection key={index} items={item.items} />;
             } else {
               return null;
             }

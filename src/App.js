@@ -22,7 +22,7 @@ import FeaturedPage from "./pages/featuredPage/FeaturedPage";
 import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ScrollToTop from "./pages/ScrollToTop";
-import MediaPage from "./pages/mediaPage/MediaPage";
+import MediaPage from "./pages/MediaPage";
 // import TeamLoading from "./pages/teamLoading/TeamLoading";
 // import SensorPage from "./pages/sensorPage/SensorPage";
 import CylinderPage from "./pages/cylinderPage/CylinderPage";

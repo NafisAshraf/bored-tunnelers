@@ -73,7 +73,11 @@ const Contactpage = () => {
                   <img src={emailpic} alt="Email" />
                 </span>
                 <span>
-                  <a href="mailto:sample@gmail.com">sample@gmail.com</a>
+                  <a href="mailto:bored.tunnelers.bd@gmail.com">
+                    <span>bored.tunnelers.bd</span>
+                    <br />
+                    <span>@gmail.com</span>
+                  </a>
                 </span>
               </li>
               <li>
