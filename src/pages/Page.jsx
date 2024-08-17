@@ -113,7 +113,7 @@ const Page = (props) => {
           <>
             <ElementOne />
             <ElementTwo />
-            <ElementThree />
+            {/* <ElementThree /> */}
             <TechnicalSpecifications />
           </>
         )}

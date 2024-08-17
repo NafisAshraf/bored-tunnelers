@@ -1,6 +1,6 @@
 import React from "react";
-import "../../components/technology/technology.css";
-import GoFundMeWidget from "../../components/GoFundMe";
+import "../../styles/global.css";
+// import GoFundMeWidget from "../../components/GoFundMe";
 import sponsorshipData from "./sponsorshipData.json";
 import { Link } from "react-router-dom";
 

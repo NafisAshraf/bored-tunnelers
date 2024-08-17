@@ -18,7 +18,7 @@ import BootstrapNavbar from "./components/header/BootstrapNavbar";
 import Contactpage from "./pages/contactpage/Contactpage";
 import AdminHome from "./pages/adminPage/adminHome";
 import TechnologyPage from "./pages/technology/TechnologyPage";
-import FeaturedPage from "./pages/featuredPage/FeaturedPage";
+import FeaturedPage from "./pages/FeaturedPage";
 import SponsorshipPage from "./pages/sponsorshipPage/SponsorshipPage";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ScrollToTop from "./pages/ScrollToTop";
@@ -40,12 +40,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/team" element={<TeamPage />} />
-        <Route path="/our-story" element={<TimelinePage />} />
+        <Route path="/timeline" element={<TimelinePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/technology" element={<TechnologyPage />} />
         <Route path="/contact" element={<Contactpage />} />
         <Route path="/admin" element={<AdminHome />} />
-        <Route path="/featuredPage" element={<FeaturedPage />} />
+        <Route path="/featured-in" element={<FeaturedPage />} />
         <Route path="/sponsorship" element={<SponsorshipPage />} />
         <Route path="/media" element={<MediaPage />} />
         <Route path="/test" element={<TestPage />} />

@@ -1,6 +1,8 @@
 import React from "react";
 import pic1 from "./Picture1E2.png";
-import logo from "./LOGOE2.png";
+// import logo from "./LOGOE2.png";
+import boringLogo from "./boring-logo.png";
+
 import "./ElementTwo.css";
 
 const ElementTwo = () => {
@@ -21,7 +23,7 @@ const ElementTwo = () => {
         <div className="col-md-6">
           <div className="d-flex flex-column align-items-start justify-content-center h-100">
             <img
-              src={logo}
+              src={boringLogo}
               alt="Logo"
               className="imgg special img-fluid mb-3"
               style={{ maxWidth: "300px", maxHeight: "100%", padding: "10px" }}
@@ -37,7 +39,7 @@ const ElementTwo = () => {
               className="special dynamic-text text-black"
               style={{ textAlign: "left" }}
             >
-              The Not-a-Boring Competition 2024 will challenge teams over 8 days
+              The Not-a-Boring Competition 2025 will challenge teams over 8 days
               and will be held in Bastrop, Texas.
             </p>
           </div>

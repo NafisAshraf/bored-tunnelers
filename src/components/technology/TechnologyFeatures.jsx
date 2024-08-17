@@ -1,6 +1,6 @@
 import React from "react";
 import featuresData from "./features.json";
-import "./technology.css";
+import "../../styles/global.css";
 import pic from "./Picture1Tech.png";
 
 function TechnologyFeatures() {

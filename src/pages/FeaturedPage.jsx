@@ -1,11 +1,12 @@
 import React from "react";
-import Featured from "../../components/Featured/Featured";
-import "../../components/header.css";
+// import Featured from "../components/Featured/Featured";
+// import "../../components/header.css";
+import Page from "./Page";
 
 function FeaturedPage() {
   return (
     <>
-      <div className="page-header">
+      {/* <div className="page-header">
         <div className="container page-header-text pt-5 px-3">
           <h1>Featured</h1>
           <p className="px-5 text-center">
@@ -16,7 +17,8 @@ function FeaturedPage() {
       </div>
       <div className="below-header">
         <Featured />
-      </div>
+      </div> */}
+      <Page pageTitle="Featured In Page" />
     </>
   );
 }

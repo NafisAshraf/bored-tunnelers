@@ -1,5 +1,5 @@
 import React from "react";
-import "./technology.css";
+import "../../styles/global.css";
 
 const Cutterhead = () => {
   return (
