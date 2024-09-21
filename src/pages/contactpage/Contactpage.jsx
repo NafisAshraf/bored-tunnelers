@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./firebase-config";
 import styles from "../../styles/Contactpage.module.css";
+import emailjs from "emailjs-com";
 
 import locationpic from "./location.png";
 import callpic from "./call.png";
@@ -36,6 +37,17 @@ const Contactpage = () => {
         message,
       });
 
+      // Send email using EmailJS
+      const templateParams = {
+        firstName,
+        lastName,
+        email,
+        mobileNumber,
+        message,
+      };
+      // console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, templateParams, process.env.REACT_APP_EMAILJS_USER_ID);
+      await emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, templateParams, process.env.REACT_APP_EMAILJS_USER_ID);
+
       setShowModal(true);
 
       // Clear form fields after successful submission
@@ -45,7 +57,8 @@ const Contactpage = () => {
       setMobileNumber("");
       setMessage("");
     } catch (error) {
-      alert("Error adding document: " + error.message);
+      console.error("Error adding document or sending email: ", error);
+      alert("Error adding document or sending email: " + error.message);
     }
   };
 
