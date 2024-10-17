@@ -5,7 +5,7 @@ import ElementTwo from "../components/HomePageElements/ElementTwo/ElementTwo";
 import ElementThree from "../components/HomePageElements/ElementThree/ElementThree";
 import TechnicalSpecifications from "../components/HomePageElements/TechnicalSpecifications/TechnicalSpecifications";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { sanityFetch } from "../sanityClient";
 import BackgroundTextSection from "../components/BackgroundTextSection";
 import BackgroundVideoSection from "../components/BackgroundVideoSection";
@@ -13,6 +13,7 @@ import TextImageSection from "../components/TextImageSection";
 import ImageSection from "../components/ImageSection";
 
 import Page from "./Page";
+import GoFundMeWidget from "../components/GoFundMe";
 
 const Homepage = () => {
   // const [data, setData] = useState(null);
@@ -30,6 +31,19 @@ const Homepage = () => {
   //     }
   //   });
   // }, []);
+  const location = useLocation();
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, 300); // Wait for 1 second before scrolling
+
+    return () => clearTimeout(timeout);
+  }, [location]);
 
   return (
     <>
@@ -89,6 +103,15 @@ const Homepage = () => {
               return null;
             }
           })} */}
+      {/* <hr /> */}
+      <div
+        className="container-fluid flex-row border-top text-center bg-white py-5"
+        id="gofundme-section"
+      >
+        {/* <hr className="pt-5 bg-white" /> */}
+        {/* <h2 className="pb-4">Help Us Out!</h2> */}
+        <GoFundMeWidget />
+      </div>
     </>
   );
 };

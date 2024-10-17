@@ -2,14 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 import logos from "../../assets/images/logo.png";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import "./BootstrapNavbar.css";
 
 const BootstrapNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  // const [anchorEl, setAnchorEl] = useState(null); // Used for MUI Menu
-  // const open = Boolean(anchorEl);
+  const [showAlert, setShowAlert] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,22 +24,45 @@ const BootstrapNavbar = () => {
     };
   }, []);
 
-  // const handleMenuClick = (event) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
-
-  // const handleMenuClose = () => {
-  //   setAnchorEl(null);
-  // };
+  const handleCloseAlert = () => {
+    setShowAlert(false);
+  };
 
   return (
     <>
       <nav
-        className={`navigation-bar navbar flex-xxl-nowrap py-2 ${
-          scrolled ? "scrolled" : ""
+        className={`navigation-bar navbar pb-2 ${scrolled ? "scrolled" : ""}  ${
+          showAlert ? "pt-0" : "pt-2"
         }`}
         data-bs-theme="dark"
+        // style={{ marginTop: showAlert ? "auto" : "0" }}
       >
+        {showAlert && (
+          <div
+            className="alert alert-warning border-0 rounded-0 ps-3 pe-5"
+            style={{
+              fontSize: "15px",
+              padding: "10px",
+              fontFamily: "Helvetica",
+              // position: "fixed",
+              // top: 0,
+              width: "100%",
+              zIndex: 1000,
+            }}
+          >
+            We are looking for donations to support our project. Please consider
+            contributing if possible.{" "}
+            <Link to="/#gofundme-section" style={{ color: "#f2cc63" }}>
+              Click here
+            </Link>
+            <button
+              type="button"
+              className="btn-close"
+              style={{ position: "absolute", top: "10px", right: "10px" }}
+              onClick={handleCloseAlert}
+            ></button>
+          </div>
+        )}
         <div className="container-xxl container-fluid">
           <Link to="/" className="text-decoration-none">
             <Navbar.Brand className="d-flex align-items-center gap-2">

@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/global.css";
-// import GoFundMeWidget from "../../components/GoFundMe";
+import GoFundMeWidget from "../../components/GoFundMe";
 import sponsorshipData from "./sponsorshipData.json";
 import { Link } from "react-router-dom";
 
@@ -72,10 +72,10 @@ const SponsorshipPage = () => {
         <hr className="pb-5" />
       </div>
 
-      {/* <div className="container-fluid text-center bg-white">
-        <h2 className="pb-4">You Can Support Us Through GoFundMe As Well</h2>
+      <div className="container-fluid flex-row text-center bg-white pb-5">
+        {/* <h2 className="pb-4">Help Us Out!</h2> */}
         <GoFundMeWidget />
-      </div> */}
+      </div>
     </>
   );
 };

@@ -61,11 +61,11 @@ const Contactpage = () => {
                   <img src={locationpic} alt="Location" />
                 </span>
                 <span>
-                  184 Rankin Street
+                  TTI Level 3, BITAC,
                   <br />
-                  Wari, Dhaka 1203
+                  Tejgaon Industrial Area,
                   <br />
-                  11472
+                  Dhaka 1208
                 </span>
               </li>
               <li>
@@ -84,7 +84,7 @@ const Contactpage = () => {
                 <span>
                   <img src={callpic} alt="Phone" />
                 </span>
-                <span>01723344565</span>
+                <span>01538257003</span>
               </li>
             </ul>
           </div>

@@ -37,8 +37,6 @@ const MediaPage = () => {
   return (
     <div>
       <Page pageTitle="Media Page" />
-
-      {/* <FeaturedSection items={featuredItems} /> */}
     </div>
   );
 };
