@@ -2,8 +2,8 @@ import React from "react";
 
 const GoFundMeWidget = () => {
   return (
-    <div className="row conttainer px-5">
-      <div className="col-7 px-5">
+    <div className="row container px-md-5">
+      <div className="col-12 col-md-7 px-md-5">
         <h1 style={{ fontWeight: "800", textAlign: "left" }} className="pb-3">
           Help Us Out!
         </h1>
@@ -34,7 +34,7 @@ const GoFundMeWidget = () => {
           </p>
         </div>
       </div>
-      <div className="col-5">
+      <div className="col-12 col-md-5">
         <iframe
           title="GoFundMe Widget"
           src="https://www.gofundme.com/f/support-bored-tunnelers-bangladeshs-pride/widget/large"
