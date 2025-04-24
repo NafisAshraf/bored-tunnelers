@@ -6,7 +6,7 @@ import "./BootstrapNavbar.css";
 
 const BootstrapNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [showAlert, setShowAlert] = useState(true);
+  const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

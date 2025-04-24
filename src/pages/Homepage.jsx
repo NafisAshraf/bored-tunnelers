@@ -104,13 +104,12 @@ const Homepage = () => {
             }
           })} */}
       {/* <hr /> */}
-      <div
-        className="container-fluid flex-row border-top text-center bg-white py-5"
-        id="gofundme-section"
-      >
-        {/* <hr className="pt-5 bg-white" /> */}
-        {/* <h2 className="pb-4">Help Us Out!</h2> */}
-        <GoFundMeWidget />
+      <div className="bg-white border-top">
+        <div className="container flex-row bg-white py-5" id="gofundme-section">
+          {/* <hr className="pt-5 bg-white" /> */}
+          {/* <h2 className="pb-4">Help Us Out!</h2> */}
+          <GoFundMeWidget />
+        </div>
       </div>
     </>
   );
